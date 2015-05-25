@@ -5,7 +5,7 @@
 
 	 function splashCtrl($scope,$http,$location){
 	 
-		//console.log('inside splashctrl');
+		console.log('inside splashctrl');
 	 	$scope.signup=function(){
 	 		console.log('inside signup');
 	 		$location.path('/signup');
