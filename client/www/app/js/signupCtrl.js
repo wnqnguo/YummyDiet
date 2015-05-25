@@ -1,9 +1,10 @@
-/*(function(){
+(function(){
 	'use strict';
-	 myApp.controller('signupCtrl',['$scope','$http','$location',signupCtrl]);
+	 angular.module('myApp.signupCtrl',[])
+	 .controller('signupCtrl',['$scope','$http','$location',signupCtrl]);
 
 
-	 function signupCtrl($scope,$http,$location){
+	 function signupCtrl($scope,$location){
 	 	console.log('inside signupCtrl');
 	 $scope.submit=function(){
 	 	console.log('called submit');
@@ -14,4 +15,4 @@
 	 };
 
 	 
-})();*/
+})();

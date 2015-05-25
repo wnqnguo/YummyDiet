@@ -1,7 +1,6 @@
 
 //console.log('myApp');
-var myApp = angular.module('myApp',['ionic','myApp.controllers'])
-angular.module('myApp.controllers', []);
+angular.module('myApp',['ionic','myApp.splashCtrl','myApp.signupCtrl'])
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
