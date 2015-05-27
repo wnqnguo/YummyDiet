@@ -2,16 +2,16 @@
 	'use strict';
 	 angular.module('myApp.signupCtrl',[])
 	 .controller('signupCtrl',['$scope','$http','$location',signupCtrl]);
-	 
 
-	 function signupCtrl($scope,$location, $http){
+
+	function signupCtrl($scope,$location){
 	 	console.log('inside signupCtrl');
-	    $scope.createUser=function(){
-	 		console.log('called create user');
-
-
-	 	};
-	
+	 $scope.submit=function(){
+	 	console.log('called submit');
+	 };
+	 
+	 console.log(username);
+	 	console.log('inside signup controllerrrrr');
 	 };
 
 })();
