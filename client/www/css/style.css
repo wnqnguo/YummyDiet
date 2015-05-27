@@ -10,3 +10,87 @@
     top:600px;
     left:227px;
 }
+/*Name view*/
+.name{
+    position:relative;
+    top:200px;
+    left:100px;
+}
+#username{
+    position:relative;
+    top:200px;
+    left:80px;
+    width:200px;
+}
+#name_submit{
+    position:relative;
+    top:200px;
+    left:80px;
+    width:200px;
+   
+}
+/*gender view*/
+#male{
+    position:relative;
+    top:200px;
+    left:103px;
+    width:100px;
+}
+#female{
+    position:relative;
+    top:250px;
+    width:100px;
+}
+.gender{
+    position:relative;
+    top:200px;
+    left:80px;
+}
+/*age view*/
+.age{
+    position:relative;
+    top:220px;
+    left:120px;
+}
+#userage{
+    position:relative;
+    top:210px;
+    width:100px;
+    left:120px;
+}
+#age_submit{
+    position:relative;
+    top:220px;
+    left:140px;
+}
+/*weight*/
+.weight{
+    position:relative;
+    top:180px;
+    left:95px;
+
+}
+.weight label{
+    width:160px;
+}
+#weight_submit{
+    position:relative;
+    top:200px;
+    left:145px;
+}
+/*summury*/
+.summary{
+    position:relative;
+    top:210px;
+    left:130px;
+}
+/*activity*/
+.activity{
+   position:relative;
+   top:180px;
+   left:0px; 
+}
+.activity p{
+   position:relative;
+   left:70px;
+}

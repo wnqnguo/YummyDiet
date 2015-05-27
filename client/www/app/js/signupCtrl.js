@@ -4,14 +4,14 @@
 	 .controller('signupCtrl',['$scope','$http','$location',signupCtrl]);
 	 
 
-	 function signupCtrl($scope,$location){
+	 function signupCtrl($scope,$location, $http){
 	 	console.log('inside signupCtrl');
-	    $scope.submit=function(){
-	 		console.log('called submit');
+	    $scope.createUser=function(){
+	 		console.log('called create user');
+
+
 	 	};
-	 
-	 	console.log($scope.username);
-	 	console.log('inside signup controllerrrrr');
+	
 	 };
 
 })();

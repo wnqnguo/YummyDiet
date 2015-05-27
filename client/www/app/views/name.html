@@ -1,0 +1,16 @@
+ <ion-view title="name"  class="has-header has-subheader" ng-controller="nameCtrl">
+            <ion-content padding="true">
+            	<div class='name'>
+            		<p id='title'>Welcome to Yummy Diet</p>
+                	<p id='started'>Let's get started</p>
+                	<p id='name'>What's your name?</p>
+            	</div>
+            	<label class="item item-input" id='username'>
+		     		<input type="text" placeholder="enter name" ng-model="user_name">
+		  		</label>
+                <h1></h1>
+		  		<button class="button button-dark" id="name_submit" ng-click="getName(user_name)">
+      			Submit
+    			</button>
+            </ion-content>
+ </ion-view>

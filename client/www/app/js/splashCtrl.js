@@ -1,13 +1,17 @@
 (function(){
 	'use strict';
-	 angular.module('myApp.splashCtrl',[]).controller('splashCtrl',['$scope','$http','$location',splashCtrl]);
+	 angular.module('myApp.splashCtrl',[])
+	 .controller('splashCtrl',['$scope','$http','$location',splashCtrl]);
 
 
 	 function splashCtrl($scope,$http,$location){
 	 
-		console.log('inside splashctrl');
+		
 	 	$scope.signup=function(){
-	 		console.log('inside signup');
+	 		
+	 		console.log('calling signup');
+	 		console.log($location);
+	 		console.log('after location');
 	 		$location.path('/signup');
 	 		
 	 	};

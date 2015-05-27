@@ -1,0 +1,13 @@
+ <ion-view title="age"  class="has-header has-subheader" ng-controller="ageCtrl">
+            <ion-content padding="true">
+            	<div class='age'>
+            		<p>How old are you?</p>
+            	</div>
+            	<label class="item item-input" id='userage'>
+		     		<input type="text" placeholder="enter age" ng-model="user_age">
+		  		</label>
+		  		<button class="button button-small" id="age_submit" ng-click="getAge(user_age)">
+      			Submit
+    			</button>
+            </ion-content>
+ </ion-view>
