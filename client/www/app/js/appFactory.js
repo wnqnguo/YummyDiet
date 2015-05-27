@@ -6,6 +6,8 @@
 	 function appFactory($http,$location){
 	 	var appFactory = {};
 	 	appFactory.user ={};
+	 	appFactory.meals={};
+	 	appFactory.meals.calories = 0;
 		return appFactory;
 	 }
 	

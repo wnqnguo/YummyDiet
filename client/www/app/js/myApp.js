@@ -10,6 +10,7 @@ angular.module('myApp',['ionic',
   'myApp.heightCtrl',
   'myApp.summaryCtrl',
   'myApp.activityCtrl',
+  'myApp.mealCtrl',
   'myApp.appFactory'
   ])
 .run(function($ionicPlatform) {
@@ -75,6 +76,11 @@ angular.module('myApp',['ionic',
      $stateProvider.state('summary', {
       url: '/summary',
       templateUrl: 'app/views/summary.html',
+      //controller: 'signupCtrl'
+    });
+     $stateProvider.state('breakfast', {
+      url: '/breakfast',
+      templateUrl: 'app/views/breakfast.html',
       //controller: 'signupCtrl'
     })
 

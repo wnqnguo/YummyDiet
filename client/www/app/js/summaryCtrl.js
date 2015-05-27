@@ -12,5 +12,8 @@
 		var curr = appFactory.user.age;
 	 	
 	 	$scope.calorie = 2000;
+	 	$scope.showBreakfast = function(){
+	 		$location.path('/breakfast');
+	 	}
 	 };
 })();

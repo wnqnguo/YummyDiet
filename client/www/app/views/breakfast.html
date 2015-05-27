@@ -1,0 +1,15 @@
+ <ion-view title="breakfast" class="has-header has-subheader" ng-controller="mealCtrl">
+            <ion-content padding="true">
+            	<div class='breakfast'>
+            	<p>recommended calorie intake:</p>
+            	<p>calories so far: {{calorieSum}}</p>
+            	<p>Please choose your breakfast:</p>
+
+            	<button class="button button-dark button-block" ng-repeat='item in meals' ng-model='item' ng-click='selectMeal(item)'>
+            		{{item.name}}:
+            		{{item.calories}} kcal
+      			</button>
+            	</div>
+            	
+		  	</ion-content>
+ </ion-view>
