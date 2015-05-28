@@ -12,11 +12,8 @@ module.exports = function (app){
     	console.log("HOW ABOUT THIS ONE????????????");
    });*/
 	app.post('/name', userController.name);
-  	 
-
-
-};
- 
+	app.get('/gender', userController.fetch);
+ };
  //module.exports = userRouter;
 
   
