@@ -2,16 +2,19 @@ var morgan = require('morgan');
 var express = require('express');
 var bodyParser = require('body-parser');
 var path = require('path');
+var mongoose    = require('mongoose');
 var userRouter= express.Router();
 var app = express();
-var mongoose    = require('mongoose');
+
 
 
 
 //module.exports = function (app, express) {
 
+//var mongoURI = 'mongodb://localhost:27017/test';
+mongoose.connect('mongodb://localhost:27017/users');
+//mongoDB.on('error', console.error.bind(console, 'connection error'));
 
-//mongoose.connect('mongodb://localhost/');
 
 
 app.use(express.static(__dirname + '/../client/www/'));
@@ -26,7 +29,7 @@ app.post('/name', function(req,res){
    });*/
 
 app.listen(8000, function(){
-	console.log('server started');
+	//console.log('server started');
 });
 
 
