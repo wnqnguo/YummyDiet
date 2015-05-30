@@ -19,13 +19,13 @@
 	 	};
 	 	$scope.getData = function(){
 	 		console.log('called get data');
-	 		$http.get('/gender')
-	 		.success(function(data,status,header,config){
-	 			console.log('getting data from server:');
-	 		})
-	 		.error(function(data,status,header,config){
-	 			console.log('failed');	
-	 		});
+	 		// $http.get('/gender',{test: "does it work??"})
+	 		// .success(function(data,status,header,config){
+	 		// 	console.log('getting data from server:');
+	 		// })
+	 		// .error(function(data,status,header,config){
+	 		// 	console.log('failed');	
+	 		// });
 	 	}
 	 	
 	
