@@ -16,7 +16,7 @@ mongoose.connect('mongodb://localhost:27017/users');
 app.use(express.static(__dirname + '/../client/www/'));
 app.use(bodyParser.json());
 app.use('/name', userRouter);
-app.use('/name', userRouter);
+
 // app.get('/gender',function(){
 // 	console.log('get request to server');
 // });

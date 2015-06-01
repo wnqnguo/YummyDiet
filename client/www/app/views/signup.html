@@ -1,25 +1,14 @@
+<!-- www/templates/login.html -->
+<div class="row row-center">
+  <div class="col">
+    <h2 class="text-center"></h2>
 
-<ion-view title="signup" ng-controller='signupCtrl'>
-	<ion-content>
-     	<h1> INDISED SIGNUP </h1 ng-click="submit()">
-     	<div class="list">
-		  <label class="item item-input">
-		     <input type="text" placeholder="username" ng-model="username">
-		    <h1>{{username}}</h1>
-		  </label>
-		  <label class="item item-input">
-		     <input type="password" placeholder="password" ng-model="password">
-		  </label>
-		  <label class="item item-input">
-		     <input type="text" placeholder="gender" ng-model="gender">
-		  </label>
-		  <label class="item item-input">
-		     <input type="text" placeholder="weight" ng-model="weight">
-		  </label>
-		</div>
-		<button class="button button-small" ng-click="createUser()">
-      		Submit
-    	</button>
-	 </ion-content>
-</ion-view>
-
+    <div class="padding-top">
+      <button class="button button-block button-calm">
+        <i class="icon ion-social-facebook"></i>&nbsp;sign up with Facebook
+      </button>
+     
+      <button class="button button-block button-stable">Sign up with email</button>
+    </div>
+  </div>
+</div>

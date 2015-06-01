@@ -40,6 +40,11 @@ angular.module('myApp',['ionic',
   $stateProvider.state('signup', {
       url: '/signup',
       templateUrl: 'app/views/signup.html',
+    //controller: 'homeCtrl'
+    });
+  $stateProvider.state('login', {
+      url: '/login',
+      templateUrl: 'app/views/Login.html',
       //controller: 'signupCtrl'
     });
    $stateProvider.state('name', {
