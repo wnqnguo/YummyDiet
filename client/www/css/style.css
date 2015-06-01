@@ -1,15 +1,16 @@
 /* Empty. Add your own CSS if you like */
 /* Empty. Add your own CSS if you like */
+/*home*/
+#home, #signup, #email{
+    position:relative;
+    top:200px;
+}
 #login{
     position:relative;
     top:600px;
     left:3px;
 }
-#signup{
-    position:relative;
-    top:600px;
-    left:227px;
-}
+
 /*Name view*/
 .name{
     position:relative;

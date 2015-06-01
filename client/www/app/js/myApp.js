@@ -11,7 +11,10 @@ angular.module('myApp',['ionic',
   'myApp.summaryCtrl',
   'myApp.activityCtrl',
   'myApp.mealCtrl',
-  'myApp.appFactory'
+  'myApp.appFactory',
+  'myApp.mainCtrl',
+  'myApp.localAuthCtrl'
+   
   ])
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -30,66 +33,59 @@ angular.module('myApp',['ionic',
   $stateProvider.state('splash', {
       url: '/splash',
       templateUrl: 'app/views/splash.html',
-      //controller: 'splashCtrl'
     });
 	$stateProvider.state('home', {
    		url: '/home',
     	templateUrl: 'app/views/home.html',
-    //controller: 'homeCtrl'
-  	});
+  });
   $stateProvider.state('signup', {
       url: '/signup',
       templateUrl: 'app/views/signup.html',
-    //controller: 'homeCtrl'
     });
+   $stateProvider.state('localAuth', {
+      url: '/localAuth',
+      templateUrl: 'app/views/localAuth.html',
+    });
+    // $stateProvider.state('facebookAuth', {
+    //   url: '/facebookAuth',
+    //   templateUrl: 'app/views/facebookAuth.html',
+    // });
   $stateProvider.state('login', {
       url: '/login',
       templateUrl: 'app/views/Login.html',
-      //controller: 'signupCtrl'
     });
    $stateProvider.state('name', {
       url: '/name',
       templateUrl: 'app/views/name.html',
-      //controller: 'signupCtrl'
     });
      $stateProvider.state('gender', {
       url: '/gender',
       templateUrl: 'app/views/gender.html',
-      //controller: 'signupCtrl'
     });
      $stateProvider.state('age', {
       url: '/age',
       templateUrl: 'app/views/age.html',
-      //controller: 'signupCtrl'
     });
      $stateProvider.state('height', {
       url: '/height',
       templateUrl: 'app/views/height.html',
-      //controller: 'signupCtrl'
     });
-
      $stateProvider.state('weight', {
       url: '/weight',
       templateUrl: 'app/views/weight.html',
-      //controller: 'signupCtrl'
     });
      $stateProvider.state('activity', {
       url: '/activity',
       templateUrl: 'app/views/activitiy.html',
-      //controller: 'signupCtrl'
     });
      $stateProvider.state('summary', {
       url: '/summary',
       templateUrl: 'app/views/summary.html',
-      //controller: 'signupCtrl'
     });
      $stateProvider.state('breakfast', {
       url: '/breakfast',
       templateUrl: 'app/views/breakfast.html',
-      //controller: 'signupCtrl'
     })
-
-
-  	//if none of the above states are matched, use this as the fallback
+	//if none of the above states are matched, use this as the fallback
   	$urlRouterProvider.otherwise('/home');
 });

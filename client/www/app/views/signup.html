@@ -1,5 +1,6 @@
 <!-- www/templates/login.html -->
-<div class="row row-center">
+<ion-view title="gender" ng-controller="mainCtrl">
+<div class="row row-center" id = 'signup'>
   <div class="col">
     <h2 class="text-center"></h2>
 
@@ -8,7 +9,7 @@
         <i class="icon ion-social-facebook"></i>&nbsp;sign up with Facebook
       </button>
      
-      <button class="button button-block button-stable">Sign up with email</button>
+      <button class="button button-block button-stable" ng-click= "signupEmail()">Sign up with email</button>
     </div>
   </div>
 </div>
