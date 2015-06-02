@@ -34,6 +34,10 @@ angular.module('myApp',['ionic',
       url: '/splash',
       templateUrl: 'app/views/splash.html',
     });
+  $stateProvider.state('loginForm', {
+      url: '/emailLogin',
+      templateUrl: 'app/views/emailLogin.html',
+    });
 	$stateProvider.state('home', {
    		url: '/home',
     	templateUrl: 'app/views/home.html',

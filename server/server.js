@@ -15,12 +15,13 @@ var session      = require('express-session');
 
 mongoose.connect('mongodb://localhost:27017/users');
 
-// require('./config/passport')(passport); // pass passport for configuration
+require('../config/passport')(passport); // pass passport for configuration
 
 app.use(express.static(__dirname + '/../client/www/'));
-app.use(bodyParser());
+
 app.use(morgan('dev')); // log every request to the console
 app.use(cookieParser()); // read cookies (needed for auth)
+app.use(bodyParser());
 
 
 // required for passport

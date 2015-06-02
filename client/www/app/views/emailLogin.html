@@ -1,5 +1,3 @@
-
-
 <ion-view title="localAuth" ng-controller="localAuthCtrl">
 <div class="row row-center" id = 'email'>
   <div class="col">
@@ -17,7 +15,7 @@
           <input type="password" ng-model='password'>
         </label>
         <h1>{{password}}</h1>
-        <button class="button button-block button-stable" ng-click='postUserInfo(email,password)'>
+        <button class="button button-block button-stable" ng-click='Login(email,password)'>
                      Submit
                     </button>
     </div>

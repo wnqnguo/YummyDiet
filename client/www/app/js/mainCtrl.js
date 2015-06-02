@@ -6,7 +6,7 @@
 
 	function mainCtrl($scope,$http,$location){
 	 	console.log('inside mainCtrl');
-	 $scope.signup=function(){
+	 $scope.signup = function(){
 	 	console.log('called singup');
 	 	$location.path('/signup');
 	 };
@@ -14,8 +14,14 @@
 	 	console.log('signing up with email');
 	 	$location.path('/localAuth');
 	 };
+	 $scope.loginFacebook = function(){
+	 	$location.path('/login');
+	 }
+	 $scope.loginEmail = function () {
+	 	$location.path('/emailLogin');
+	 }
 	 //console.log(username);
-	 	console.log('inside signup controllerrrrr');
+	 //console.log('inside signup controllerrrrr');
 	
 	};
 })();
