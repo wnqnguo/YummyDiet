@@ -35,9 +35,9 @@ angular.module('myApp',['ionic',
       url: '/signup',
       templateUrl: 'app/views/auth/signup.html',
     });
-   $stateProvider.state('emailSignup', {
-      url: '/emailSignup',
-      templateUrl: 'app/views/auth/emailSignup.html',
+   $stateProvider.state('signupForm', {
+      url: '/signupForm',
+      templateUrl: 'app/views/auth/signupForm.html',
     });
     // $stateProvider.state('facebookAuth', {
     //   url: '/facebookAuth',
@@ -61,18 +61,18 @@ angular.module('myApp',['ionic',
       templateUrl: 'app/views/userInfo/genderandAge.html',
     });
    
-     $stateProvider.state('heightAndWeight', {
-      url: '/heightAndWeight',
-      templateUrl: 'app/views/userInfo/heightAndWeight.html',
+     $stateProvider.state('stats', {
+      url: '/stats',
+      templateUrl: 'app/views/userInfo/stats.html',
     });
      $stateProvider.state('activity', {
       url: '/activity',
       templateUrl: 'app/views/userInfo/activitiy.html',
     });
-    //  $stateProvider.state('summary', {
-    //   url: '/summary',
-    //   templateUrl: 'app/views/summary.html',
-    // });
+     $stateProvider.state('CalorieBudget', {
+      url: '/CalorieBudget',
+      templateUrl: 'app/views/userInfo/CalorieBudget.html',
+    });
      $stateProvider.state('breakfast', {
       url: '/breakfast',
       templateUrl: 'app/views/meals/breakfast.html',

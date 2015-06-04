@@ -1,12 +1,13 @@
- <ion-view title="activity" class="has-header has-subheader" ng-controller="activityCtrl">
-            
-            	<div class='activity'>
-            	<h4>Please select your activity level:</h4>
-
-            	<button class="button button-stable button-block" ng-repeat='item in activity_lv' ng-model='item' ng-click='setActivity(item)' >
-            		{{item}}
-      			</button>
-            	</div>
+ <ion-view title="activity"  ng-controller="mainCtrl" class='weight_activity'>
+     <p id='weight_title'>My Goal Weight</p>
+     <p id='weight_range'> Your healthy weight range is 110lbs~120lbs, please set your goal weight for a better estimation of your daily calorie budget </p>
+	     
+	     <label id="setWeight" class ="item item-input">
+	        <span class="input-label" >Goal Weight</span>
+	        <input type="numbers" >
+		</label>
+		<button class="button button-stable button-block" id="goalweight_submit" ng-click="setCalorieBudget()">Set My</br>Calorie Budget</button>
+     
             	
 	
  </ion-view>

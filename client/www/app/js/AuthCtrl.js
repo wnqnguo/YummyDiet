@@ -11,7 +11,7 @@
         $scope.signup = function(){
             appFactory.user = {};
             console.log('called singup');
-            $location.path('/signup');
+            $location.path('/signupForm');
          };
          // redirect to the page for email or facebook login
          $scope.login= function(){

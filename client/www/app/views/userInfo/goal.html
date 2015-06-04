@@ -1,14 +1,31 @@
- <ion-view title="name"  ng-controller="mainCtrl">
-         
-            	<div class='setGoal'>
-            		<p id='title'>Welcome to Yummy Diet</p>
-                	<p id='started'>Let's get started</p>
-                	<p id='name'>What's your goal?</p>
-            	</div>
-            	<button  id ='goal' class="button button-stable button-block button-active" ng-repeat='item in goals' ng-model='item' ng-click='setGoal(item)' >
-                    {{item}}
-                </button>
-                
-      			
+ <ion-view title="name"  ng-controller="mainCtrl" class="goalPage"
+  <ion-content>
+        <button  id="cancel" class="button button-clear button-light">
+            Cancel
+        </button>
+        <h4 id='title'>My Goal</h4>
+        <h3 id='quote'>If it doesn't challenge you, it doesn't change you.</p>
+        <div id="goal_input">
+            <div id='set_goal'> 
+                <h3>I will</h3>
+                <label class="item item-input">
+                <span class="input-label" ></span>
+                <input type="text" placeholder="Loose 20 pounds">
+                </label>
+                <div class="h_line"></div>
+            </div>
+            <div id='set_date'> 
+                <h3>By</h3>
+                <label class="item item-input">
+                <span class="input-label" ></span>
+                <input type="date" placeholder="Future Date">
+                </label>
+                <div class="h_line"></div>
+            </div> 
         
- </ion-view>
+       
+        </div>
+         <button  id ='setStatus' ng-click="setStatus()">Set My Stats</button> 
+        
+ </ion-content>
+</ion-view>

@@ -10,32 +10,324 @@
     top:600px;
     left:3px;
 }
-/*goal view*/
-#goal{
+#signin{
+    position:relative;
+    top:170px;
+    height:70px;
+    border:none;
+}
+#home_page, h2{
+    font-family: 'Capriola', cursive;
+    font-size: 40px;
+    color: #8BC34A;
+    position:relative;
+    top: 100px;
+    left:60px;
+}
+#home_page, p{
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 30px;
+    position:relative;
+    left:15px;
+    top: 80px;
+    padding:15px;
+    margin:20px;
+}
+
+#home_page, div {
     position:relative;
     top:100px;
-    border-radius: 5px;
-    left:15px;
-    width: 350px;
+    width:65%;
+    left:60px;
+    height:1px;
+    background: grey ;
+    }
+#setGoal{
+    top:110px;
+    left:70px;
+    width: 230px;
+    border-radius: 50%;
+    border:none;
+    height:230px;
+    background-color:#8BC34A;
+    font-size:25px;
+    color:white;
+    font-family: 'Gloria Hallelujah', cursive;
 }
-/*Name view*/
+/*goal view*/
+/*goal view*/
+#set_goal h3{
+    position:relative;
+    top:-70px;
+    left:-30px;
+    color: black;
+}
+
+#set_goal label{
+    border:none;
+    position:relative;
+    top:-10px;
+    left:0px;
+   
+ }
+ #set_goal div{
+    position:relative;
+    top:-6px;
+    left:60px;
+}
+ #set_goal input{
+     text-align:left;
+ }
+#set_date h3{
+    position:relative;
+    top:0px;
+    left:-30px;
+    color: black;
+}
+#set_date label{
+    border:none;
+    position:relative;
+    top:-10px;
+    left:0px;
+   
+ }
+  #set_date div{
+    position:relative;
+    top:-7px;
+    width:220px;
+    left:0px;
+    height:2px;
+    background: grey ;
+
+}
+#goal_input{
+    position:relative;
+    background-color:white;
+    border-radius:20px;
+    height:250px;
+    top:-30px;
+    margin:0px;
+    left:15px;
+    width:330px;
+}
+.goalPage #cancel{
+    position: relative;
+    color:white;
+    font-size:22px;
+    left:10px;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+#goalPage,h4{
+    position:relative;
+    left:100px;
+    color: white;
+    font-size:40px;
+    font-family: 'Capriola', cursive;
+    margin:10px;
+
+}
+#goalPage,h3{
+    position:relative;
+    top:0px;
+    font-size:25px;
+    font-family: 'Gloria Hallelujah', cursive;
+    color:white;
+    margin:10px;
+}
+#setStatus{
+    position:relative;
+    top:0px;
+    left:180px;
+    width: 230px;
+    border-radius: 50%;
+    border:none;
+    height:230px;
+    background-color:#FFd000;
+    font-size:25px;
+    color:white;
+    font-family: 'Gloria Hallelujah', cursive;
+    text-align:left;
+
+}
+.goalPage{
+  background-color:#8BC34A;  
+}
+/******/
+/******/
+/*****stats*****/
+.stats h3{
+  position:relative;
+  top:px; 
+  color:black; 
+}
+
+.stats{
+   background-color: #FFd000;
+}
+.stats h3{
+    position:relative;
+    left:100px;
+    top:30px;
+    color: white;
+    font-size:40px;
+    font-family: 'Capriola', cursive;
+    margin:10px;
+
+}
+.stats h4{
+    position:relative;
+    left:10px;
+    top:30px;
+    color: white;
+    font-size:25px;
+    font-family: 'Gloria Hallelujah', cursive;
+    margin:10px;
+
+}
+.status_input{
+    position:relative;
+    top:90px;
+    width:400px;
+    left:0px;
+    border-radius:10px;
+    font-family: 'Capriola', cursive;
+}
+.status_input input{
+    border:none;
+}
+
+.status_input label{
+    border-bottom:solid 1px;
+    font-weight: bold;
+    font-family: 'Capriola', cursive;
+}
+.status_input #status_submit{
+    position:relative;
+    top:10px;
+    left:200px;
+    text-align:left;
+}
+/********weight and activity**************/
+.weight_activity{
+   background-color: #4a1484;
+   color:white;
+}
+#weight_title{
+    position:relative;
+    top:40px;
+    font-size:35px;
+    font-family: 'Capriola', cursive;
+}
+#weight_range{
+    position:relative;
+    top:40px;
+    font-size:30px;
+}
+.weight_activity label{
+    position:relative;
+    top:80px;
+    font-size:30px; 
+}
+input{
+    border:none;
+}
+#goalweight_submit{
+    position:relative;
+    background-color:#98FFCC;
+    top:165px;
+    left:185px;
+    width: 230px;
+    height:230px;
+    border-radius: 50%;
+    border:none;
+    font-size: 25px;
+    font-family: 'Gloria Hallelujah', cursive;
+    text-align:left;
+}
+/******Calorie Budget**********/
+.Budget{
+  background-color:#EC407A;
+
+
+}
+.Budget #title{
+    position:relative;
+    top:40px;
+    font-size:35px;
+    width:360px;
+    left:3px;
+    color:white;
+    font-family: 'Capriola', cursive;
+
+}
+.Budget #summary{
+    position:relative;
+    top:25px;
+    font-size:30px;
+    color:white;
+}
+.item.range{
+    position:relative;
+    top:40px;
+    left:35px;
+    height:100px;
+    width:300px;
+    border:none;
+    background-color:#EC407A;
+}
+#last_submit{
+    position:relative;
+    background-color:white;
+    top:165px;
+    left:80px;
+    width: 230px;
+    height:230px;
+    border-radius: 50%;
+    border:none;
+    font-size: 40px;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+/***********Signup*************/
+.signupForm #title{
+    position:relative;
+    top:-20px;
+    left:-30px;
+    font-size:35px;
+    width:400px;
+    font-family: 'Capriola', cursive;
+    background-color:#558B2F;
+    height:80px;
+    border:20px solid #558B2F;
+    color:white;
+}
+.signupForm #quote{
+    position:relative;
+    top:-40px;
+    font-size:25px;
+    width:400px;
+    left:-20px;
+    font-family: 'Gloria Hallelujah', cursive;
+    background-color:#558B2F;
+    color:white;
+    padding:25px;
+    height:120px;
+
+
+}
 .name{
     position:relative;
     top:200px;
     left:100px;
 }
-#username{
+.signupForm div label{
     position:relative;
-    top:200px;
-    left:80px;
-    width:200px;
+    top:-100px;
+    border:none;
+    left:5px;
+    font-family:'Capriola', cursive;
 }
-#name_submit{
-    position:relative;
-    top:200px;
-    left:80px;
-    width:200px;
-   
+.signupForm div input{
+    
 }
 /*gender view*/
 #male{
@@ -68,10 +360,21 @@
    
 }
 #age button{
-    top:15px;
-    left:-100px;
-    width: 320px;
+    top:150px;
+    left:34px;
+    width: 230px;
+    border-radius: 50%;
+    border:none;
+    height:230px;
+    background-color:#FF6699;
+    font-size:25px;
+    color:white;
+    font-family: 'Gloria Hallelujah', cursive;
+
   
+}
+.height_gender{
+    background-color:#6699FF;
 }
 
 
@@ -84,27 +387,30 @@
     position:relative;
     top:200px;
 }
+
+#status_submit{
+    top:120px;
+    left:150px;
+    width: 230px;
+    border-radius: 50%;
+    border:none;
+    height:230px;
+    background-color:#4a1484;
+    font-size:25px;
+    color:white;
+    font-family: 'Gloria Hallelujah', cursive;
+
+}
+.height_Weight{
+    background-color: #a7ffeb;
+}
 /*summury*/
 .summary{
     position:relative;
     top:210px;
     left:130px;
 }
-/*activity*/
-.activity{
-   position:relative;
-   top:180px;
-   left:0px; 
-}
-.activity h4{
-   position:relative;
-   left:65px;
-}
-.activity button{
-    width: 320px;
-    left:30px;
-}
-/*breakfast*/
+reakfast*/
 .breakfast{
    position:relative;
    top:120px;

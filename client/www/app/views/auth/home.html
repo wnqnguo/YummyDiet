@@ -1,14 +1,10 @@
- <ion-view title="Home" ng-controller="AuthCtrl">
+ <ion-view title="Home" ng-controller="mainCtrl" class ="home_page">
          <!-- www/templates/login.html -->
-<div class="row row-center" id= "home">
-  <div class="col">
-    <h2 class="text-center">Welcome to YummyDiet</h2>
-
-    <div class="padding-top">
-      <button class="button button-block button-stable" ng-click ='signup()'>Sign up</button>
-      <button class="button button-block button-stable" ng-click='login()'>Log in</button>
-     
-    </div>
-  </div>
-</div>
-  </ion-view>
+	
+    	<h2>YummyDiet</h2>
+    	<div class="h_line"></div>
+    	<p>Set your goals high, and don't stop till you get there.</p>
+			<button class="button button-block button-stable" id='setGoal' ng-click ='signupEmail()'>Set My Goal</button>
+      		<button class="button button-block button-stable" id='signin'ng-click='login()'>Members, sign in!</button>
+   
+ </ion-view>

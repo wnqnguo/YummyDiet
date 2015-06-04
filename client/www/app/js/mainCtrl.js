@@ -15,7 +15,6 @@
          $scope.setGoal = function (item){
              appFactory.user.goal = item;
              $location.path('/genderandAge');
-
          }
         // $scope.setName=function(item){
         //     appFactory.user.username=item;
@@ -50,6 +49,21 @@
             appFactory.user.age = item;
             $location.path('/heightAndWeight');
         };
+        $scope.setStatus = function(){
+            console.log('inside setStatus');
+            $location.path('/stats');
+        }
+        $scope.setGoalWeight = function(){
+            console.log('inside going to activity');
+            $location.path('/activity');
+        }
+        $scope.setCalorieBudget = function(){
+            $location.path('/CalorieBudget');
+        }
+        $scope.signupEmail = function(){
+            console.log('signing up with email');
+            $location.path('/goal');
+         };
       
 
 };

@@ -1,0 +1,28 @@
+
+
+<ion-view title="localAuth" ng-controller="AuthCtrl" class="signupForm">
+
+        <p id='title'>Sign Up</p>
+        <p id='quote'> You are one step away from starting a new journey</p>
+        <div>
+          <label class="item item-input">
+            <span class="input-label" >username</span>
+            <input type="text" ng-model='email'>
+          </label>
+           <label class="item item-input">
+            <span class="input-label" >email</span>
+            <input type="text" ng-model='email'>
+          </label>
+          <label class="item item-input">
+            <span class="input-label" >password</span>
+            <input type="text" ng-model='email'>
+          </label>
+          <label class="item item-input">
+            <span class="input-label" >verify password</span>
+            <input type="text" ng-model='email'>
+          </label>
+          <button class="button button-block button-stable" ng-click='postUserInfo(email,password)'>Register</button>
+        </div>
+
+ 
+</ion-view>
