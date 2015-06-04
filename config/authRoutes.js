@@ -10,16 +10,16 @@ module.exports = function ( app, passport){
 	 // 	res.send('authenticated');
 	 // });
 	    // process the signup form
-    app.post('/signup', passport.authenticate('local-signup'), function(req,res){
+    app.post('/emailSignup', passport.authenticate('local-signup'), function(req,res){
     	console.log('authentication successful ');
     	console.log('req is: ', req.body);
     	//res.redirect('/name');
     	res.send('authenticatedddddd');
     });
 
-    app.post('/login', passport.authenticate('local-login'), function(req, res){
+    app.post('/emailLogin', passport.authenticate('local-login'), function(req, res){
     	console.log('logged in');
-    	res.send('coming from serverrrrrr');
+    	res.send('logged in successful');
     });
 
 };

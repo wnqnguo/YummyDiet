@@ -1,19 +1,11 @@
 
 //console.log('myApp');
 angular.module('myApp',['ionic',
-  'myApp.splashCtrl',
-  'myApp.signupCtrl',
-  'myApp.nameCtrl',
-  'myApp.genderCtrl',
-  'myApp.ageCtrl',
-  'myApp.weightCtrl',
-  'myApp.heightCtrl',
-  'myApp.summaryCtrl',
-  'myApp.activityCtrl',
   'myApp.mealCtrl',
   'myApp.appFactory',
   'myApp.mainCtrl',
-  'myApp.localAuthCtrl'
+  'myApp.AuthCtrl',
+  'myApp.activityCtrl'
    
   ])
 .run(function($ionicPlatform) {
@@ -30,66 +22,61 @@ angular.module('myApp',['ionic',
 })
 .config(function($stateProvider, $urlRouterProvider){
   console.log('redirect to home');
-  $stateProvider.state('splash', {
-      url: '/splash',
-      templateUrl: 'app/views/splash.html',
-    });
-  $stateProvider.state('loginForm', {
+ 
+  $stateProvider.state('emailLogin', {
       url: '/emailLogin',
-      templateUrl: 'app/views/emailLogin.html',
+      templateUrl: 'app/views/auth/emailLogin.html',
     });
-	$stateProvider.state('home', {
-   		url: '/home',
-    	templateUrl: 'app/views/home.html',
+  $stateProvider.state('home', {
+      url: '/home',
+      templateUrl: 'app/views/auth/home.html',
   });
   $stateProvider.state('signup', {
       url: '/signup',
-      templateUrl: 'app/views/signup.html',
+      templateUrl: 'app/views/auth/signup.html',
     });
-   $stateProvider.state('localAuth', {
-      url: '/localAuth',
-      templateUrl: 'app/views/localAuth.html',
+   $stateProvider.state('emailSignup', {
+      url: '/emailSignup',
+      templateUrl: 'app/views/auth/emailSignup.html',
     });
     // $stateProvider.state('facebookAuth', {
     //   url: '/facebookAuth',
     //   templateUrl: 'app/views/facebookAuth.html',
     // });
-  $stateProvider.state('login', {
+   $stateProvider.state('login', {
       url: '/login',
-      templateUrl: 'app/views/Login.html',
+      templateUrl: 'app/views/auth/Login.html',
     });
-   $stateProvider.state('name', {
-      url: '/name',
-      templateUrl: 'app/views/name.html',
+    $stateProvider.state('profile', {
+      url: '/profile',
+      templateUrl: 'app/views/auth/profile.html',
     });
-     $stateProvider.state('gender', {
-      url: '/gender',
-      templateUrl: 'app/views/gender.html',
+   
+     $stateProvider.state('goal', {
+      url: '/goal',
+      templateUrl: 'app/views/userInfo/goal.html',
     });
-     $stateProvider.state('age', {
-      url: '/age',
-      templateUrl: 'app/views/age.html',
+      $stateProvider.state('genderandAge', {
+      url: '/genderandAge',
+      templateUrl: 'app/views/userInfo/genderandAge.html',
     });
-     $stateProvider.state('height', {
-      url: '/height',
-      templateUrl: 'app/views/height.html',
-    });
-     $stateProvider.state('weight', {
-      url: '/weight',
-      templateUrl: 'app/views/weight.html',
+   
+     $stateProvider.state('heightAndWeight', {
+      url: '/heightAndWeight',
+      templateUrl: 'app/views/userInfo/heightAndWeight.html',
     });
      $stateProvider.state('activity', {
       url: '/activity',
-      templateUrl: 'app/views/activitiy.html',
+      templateUrl: 'app/views/userInfo/activitiy.html',
     });
-     $stateProvider.state('summary', {
-      url: '/summary',
-      templateUrl: 'app/views/summary.html',
-    });
+    //  $stateProvider.state('summary', {
+    //   url: '/summary',
+    //   templateUrl: 'app/views/summary.html',
+    // });
      $stateProvider.state('breakfast', {
       url: '/breakfast',
-      templateUrl: 'app/views/breakfast.html',
+      templateUrl: 'app/views/meals/breakfast.html',
     })
-	//if none of the above states are matched, use this as the fallback
-  	$urlRouterProvider.otherwise('/home');
+  //if none of the above states are matched, use this as the fallback
+    $urlRouterProvider.otherwise('/home');
 });

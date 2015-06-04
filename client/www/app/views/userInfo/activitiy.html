@@ -1,0 +1,12 @@
+ <ion-view title="activity" class="has-header has-subheader" ng-controller="activityCtrl">
+            
+            	<div class='activity'>
+            	<h4>Please select your activity level:</h4>
+
+            	<button class="button button-stable button-block" ng-repeat='item in activity_lv' ng-model='item' ng-click='setActivity(item)' >
+            		{{item}}
+      			</button>
+            	</div>
+            	
+	
+ </ion-view>

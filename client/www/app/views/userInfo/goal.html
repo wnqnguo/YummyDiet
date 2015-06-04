@@ -1,0 +1,14 @@
+ <ion-view title="name"  ng-controller="mainCtrl">
+         
+            	<div class='setGoal'>
+            		<p id='title'>Welcome to Yummy Diet</p>
+                	<p id='started'>Let's get started</p>
+                	<p id='name'>What's your goal?</p>
+            	</div>
+            	<button  id ='goal' class="button button-stable button-block button-active" ng-repeat='item in goals' ng-model='item' ng-click='setGoal(item)' >
+                    {{item}}
+                </button>
+                
+      			
+        
+ </ion-view>

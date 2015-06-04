@@ -1,0 +1,18 @@
+<ion-view title="profile" ng-controller="AuthCtrl">
+    <div id = 'weight'>
+        <h4>135 lbs</h4>
+        <h4> Current </h4>
+        <h4>{{email}}</h4>
+    </div>
+    <div id = 'date'> 
+    	<h4>Today, Jun3</h4>
+    	<h4>Calories Budget: 1200</h4>
+    </div>
+    <div id = 'meals' >
+    	<button class="button button-stable button-block" ng-click="breakfast()">Breakfast</button>
+        <button class="button button-stable button-block">Lunch</button>
+        <button class="button button-stable button-block">Dinner</button>
+        <button class="button button-stable button-block">Snacks</button>          
+    </div>
+    
+</ion-view>

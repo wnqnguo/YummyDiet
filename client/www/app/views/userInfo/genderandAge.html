@@ -1,0 +1,31 @@
+ <ion-view title="gender" class="has-header has-subheader" ng-controller="mainCtrl">
+            <ion-content padding="true">
+            	<div class='gender'>
+            		<h3> I am</h3>
+            	</div>
+            	<div id ='genderButton'>
+                    <button class="button button-stable" id="male" ng-click="setMale()">
+                        Male     
+                    </button>
+                    <button class="button button-stable" id="female" ng-click="setFemale()">
+                        Female
+                    </button>
+                </div>
+                <div id = 'age'>
+                    <h3> My age is:</h3>
+                      <label class="item item-input">
+                         <input type="text" placeholder="23 years old" ng-model='age'>
+                    </label>
+                    
+                    <button class="button button-stable button-block" ng-click ='setAge(age)'>
+                                                    Submit
+                    </button>
+                    
+                </div>
+
+                
+                
+		  		
+               
+            </ion-content>
+ </ion-view>

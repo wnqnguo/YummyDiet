@@ -1,5 +1,6 @@
  <ion-view title="breakfast" class="has-header has-subheader" ng-controller="mealCtrl">
             <ion-content padding="true">
+            <!-- 
             	<div class='breakfast'>
             	<p>recommended calorie intake:</p>
             	<p>calories so far: {{calorieSum}}</p>
@@ -10,6 +11,13 @@
             		{{item.calories}} kcal
       			</button>
             	</div>
-            	
-		  	</ion-content>
+
+             -->  <h4> Breakfast</h4>
+            	<div class="list list-inset">
+                        <label class="item item-input">
+                              <i class="icon ion-search placeholder-icon"></i>
+                              <input type="text" placeholder="Search" ng-model='breakfast' >
+                        </label>
+                  </div>
+		  </ion-content>
  </ion-view>
