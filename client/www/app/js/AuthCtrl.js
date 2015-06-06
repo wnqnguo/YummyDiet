@@ -19,10 +19,7 @@
             $location.path('/login');
          };
          //
-        $scope.signupEmail = function(){
-            console.log('signing up with email');
-            $location.path('/goal');
-         };
+       
          //send post request with facebook info
         $scope.loginFacebook = function(){
             $location.path('/login');
@@ -32,7 +29,7 @@
          }
        
      $scope.postUserInfo=function(email,password){
-
+        $location.path('/profile');
         console.log('called singup');
         appFactory.user.email = email ;
         appFactory.user.password = password;

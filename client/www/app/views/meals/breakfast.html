@@ -1,5 +1,5 @@
  <ion-view title="breakfast" class="has-header has-subheader" ng-controller="mealCtrl">
-            <ion-content padding="true">
+          
             <!-- 
             	<div class='breakfast'>
             	<p>recommended calorie intake:</p>
@@ -12,12 +12,29 @@
       			</button>
             	</div>
 
-             -->  <h4> Breakfast</h4>
-            	<div class="list list-inset">
+ -->  <div> 
+            <p>What would you like to eat?</p>
+      </div>
+      <div>
+            <form ng-submit="search(meal)"> 
+                  <label class="item item-input">
+                  <span class="input-label"> enter food:</span>
+                  <input type="text" ng-model="meal">
+                  </label>
+                  <p>{{meal}}</p>
+            </form>
+            
+      </div>
+      <div ng-repeat = 'item in names'> {{item}}</div>
+                        
+                 
+             
+            	<!-- <div class="list list-inset">
                         <label class="item item-input">
                               <i class="icon ion-search placeholder-icon"></i>
-                              <input type="text" placeholder="Search" ng-model='breakfast' >
+                              <input type="text" placeholder="Search" ng-model='breakfast' ng- >
                         </label>
-                  </div>
-		  </ion-content>
+                        <h1>{{breakfast}}</h1>
+                  </div> -->
+		 
  </ion-view>

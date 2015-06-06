@@ -34,7 +34,7 @@
     margin:20px;
 }
 
-#home_page, div {
+#home_page, .h_line{
     position:relative;
     top:100px;
     width:65%;
@@ -56,50 +56,62 @@
 }
 /*goal view*/
 /*goal view*/
-#set_goal h3{
-    position:relative;
-    top:-70px;
-    left:-30px;
+ #set_goal,#i_will{
     color: black;
-}
-
-#set_goal label{
-    border:none;
     position:relative;
-    top:-10px;
+    top:-20px;
     left:0px;
-   
- }
- #set_goal div{
-    position:relative;
-    top:-6px;
-    left:60px;
+    width:70px;
+    
 }
- #set_goal input{
-     text-align:left;
- }
-#set_date h3{
+#goal_input,#by{
+    color: black;
+    position:relative;
+    top: 30px;
+    left:0px;
+    width:40px;
+}
+#goal_input,#weight_label{
+  
+    position:relative;
+    top:30px;
+    left:100px;
+    width:200px;
+    border:none;
+}
+#goal_input ,#goal{
+    border:none;
     position:relative;
     top:0px;
-    left:-30px;
-    color: black;
-}
-#set_date label{
-    border:none;
-    position:relative;
-    top:-10px;
+    width:25px;
     left:0px;
    
  }
-  #set_date div{
+  #goal_input,#date_label{
     position:relative;
-    top:-7px;
-    width:220px;
-    left:0px;
-    height:2px;
-    background: grey ;
+    top:-10px;
+    left:100px;
+    width:200px;
+    border:none;
+ }
+   #goal_input,#date{
+    position:relative;
+    top:-10px;
+    left:20px;
+    width:200px;
+
+ }
+ input{
+     border-style:none;
+ }
+label{
+    position: relative;
+    left:90px;
+    width:200px;
+    border-style:none;
 
 }
+
 #goal_input{
     position:relative;
     background-color:white;
@@ -321,13 +333,22 @@ input{
 }
 .signupForm div label{
     position:relative;
-    top:-100px;
     border:none;
     left:5px;
     font-family:'Capriola', cursive;
 }
-.signupForm div input{
-    
+.signupForm #register{
+     position:relative;
+    background-color:#558B2F;
+    top:50px;
+    left:80px;
+    width: 230px;
+    height:230px;
+    border-radius: 50%;
+    border:none;
+    font-size: 40px;
+    font-family: 'Gloria Hallelujah', cursive;
+    color:white;
 }
 /*gender view*/
 #male{
@@ -403,15 +424,40 @@ input{
 }
 .height_Weight{
     background-color: #a7ffeb;
+
 }
 /*summury*/
-.summary{
+.profile{
+   
+    background-color:#9CCC65;
+}
+#calories {
+    position: relative;
+    font-size:20px;
+    width:350px;
+    left:18px;
+    top:260px;
+    font-family:'Capriola', cursive;
+}
+.profile #date{
+    border:0px;
+}
+.profile .list a{
+    background-color:#FCF4D9; 
     position:relative;
-    top:210px;
-    left:130px;
+    top:240px;
+    border-style:none;
+    font-family:'Capriola', cursive; 
+    font-size:25px; 
+    
 }
-reakfast*/
-.breakfast{
-   position:relative;
-   top:120px;
+#weight{
+    position: relative;
+    font-size:15px;
+    width:350px;
+    left:20px;
+    top:-190px; 
+    font-family:'Capriola', cursive; 
+    font-size:20px;  
 }
+

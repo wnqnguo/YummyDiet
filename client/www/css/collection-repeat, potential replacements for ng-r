@@ -1,0 +1,11 @@
+collection-repeat, potential replacements for ng-repeat, so instead of rendering all the items in the collections
+it only renders the items that would fit into the view, great for infite scrolling, no lag at all
+
+Pull to refresh, it fetchs more date or whatever update you want when the user pulls down 
+
+
+Prmose, A + specification, a promise is the eventual result of an asynchronous operation
+it has: a value, a state
+
+THe then method, a promise must contain a then method, which registers callbacks that handle either:
+
