@@ -65,8 +65,7 @@ app.get("/breakfast", function(req, res){
   console.log('request.query', req.query.name);
   //var temp = JSON.parse(req.query);
 	//console.log('server got a request for breakfast', + name);
-  
-   obj ={};
+ 
 
   
   request("http://api.nal.usda.gov/ndb/search/?format=json&q="+name+"&sort=n&max=25&offset=0&api_key=cUzkfSi8jXH1X8Ry4k2g3TK7S5oEqCnsYSGoQXXk", function (error, response, body) {

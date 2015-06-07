@@ -1,31 +1,21 @@
- <ion-view title="breakfast" class="has-header has-subheader" ng-controller="mealCtrl">
-          
-            <!-- 
-            	<div class='breakfast'>
-            	<p>recommended calorie intake:</p>
-            	<p>calories so far: {{calorieSum}}</p>
-            	<p>Please choose your breakfast:</p>
-
-            	<button class="button button-dark button-block" ng-repeat='item in meals' ng-model='item' ng-click='selectMeal(item)'>
-            		{{item.name}}:
-            		{{item.calories}} kcal
-      			</button>
-            	</div>
-
- -->  <div> 
-            <p>What would you like to eat?</p>
-      </div>
-      <div>
-            <form ng-submit="search(meal)"> 
+ <ion-view title="breakfast" class="has-header has-subheader" ng-controller="mealCtrl" id="breakfast" i>
+   
+            <p id="what_to_eat">What would you like to eat?</p>
+      
+            
+            <form ng-submit="search(meal)" id='food'> 
                   <label class="item item-input">
                   <span class="input-label"> enter food:</span>
                   <input type="text" ng-model="meal">
                   </label>
-                  <p>{{meal}}</p>
             </form>
             
+     
+      <div ng-repeat = 'item in names'>
+           <button class="button button-block button-calm" ng-click =" getNutrition(item)">
+            {{item}}
+            </button>
       </div>
-      <div ng-repeat = 'item in names'> {{item}}</div>
                         
                  
              

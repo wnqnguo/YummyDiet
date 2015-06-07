@@ -1,6 +1,9 @@
 /* Empty. Add your own CSS if you like */
 /* Empty. Add your own CSS if you like */
 /*home*/
+#home_page{
+    background-image: url("img/home.jpg");
+}
 #home, #signup, #email{
     position:relative;
     top:200px;
@@ -24,6 +27,7 @@
     top: 100px;
     left:60px;
 }
+
 #home_page, p{
     font-family: 'Gloria Hallelujah', cursive;
     font-size: 30px;
@@ -460,4 +464,43 @@ input{
     font-family:'Capriola', cursive; 
     font-size:20px;  
 }
+/****Breakfast**/
+#breakfast {
+    background-image: url("img/breakfast.jpg");
+   
+}
+#breakfast #what_to_eat{
+    position:relative;
+    top:20px;
+    color:white;
+     border-bottom:solid 1px white;
 
+    }
+form{
+  
+}
+label{
+    border:none;
+    color:transparent;
+
+}
+#food{
+    position:relative;
+    top:100px;
+    background-color:transparent;
+}
+#food input{
+   background-color:white;
+
+}
+#food label{
+   background-color:transparent;
+   border:none;
+}
+#food .input-label{
+    color:white;
+    border-bottom:solid 1px white;
+    font-family:'Capriola', cursive; 
+    font-size:25px; 
+    
+}

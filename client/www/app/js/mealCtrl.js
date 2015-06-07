@@ -35,30 +35,8 @@
               //data: $scope.food.name
            })
             .then(function(resp){
-           
-           // console.log('got it from the server',resp.data.list.item[0]);
-            //     $scope.info = resp.data;
-            //     $scope.food.name = $scope.name;
-            //     console.log("all the food has the word ", resp.data.list.item[0].ndbno);
-            //     $scope.food.ndbno =resp.data.list.item[0].ndbno;
-            //     console.log('ndbno is '+$scope.food.ndbno);
-            //     return $http({
-            //         method: 'GET',
-            //         url: "http://api.nal.usda.gov/ndb/reports/?ndbno="+$scope.food.ndbno+"&type=b&format=json&api_key=cUzkfSi8jXH1X8Ry4k2g3TK7S5oEqCnsYSGoQXXk"
-            //     })
-            //     .then(function(resp){
-            //         $scope.nutrition = resp.data;
-            //         console.log('nutritional information '+resp.data[0]);
-                
-            // $http.get('/breakfast',{name: item})
-            // .success(function(data,status,header,config){
-            //     console.log('sent name to server');
-            // })
-            // .error(function(data,status,header,config){
-            //     console.log('failed');
-            // });
-           // var arr = ;
-           var obj = JSON.parse(resp.data)
+
+           var obj = JSON.parse(resp.data);
            console.log(typeof resp.data);
            console.dir(obj);
 
@@ -71,39 +49,25 @@
                 console.log('received, response from server, data: ',$scope.names[i]);
             }
             });
-                
-        //  };
-            // })
-            // .then(function(resp){
-           
-              
-            
 
-            // return $http({
-            //   method: 'GET',
-            //   et=0&api_key=cUzkfSi8jXH1X8Ry4k2g3TK7S5oEqCnsYSGoQXXk"
-            // })
-            // .then(function(resp){
-            //     $scope.info = resp.data;
-            //     $scope.food.name = $scope.name;
-            //     console.log("all the food has the word ", resp.data.list.item[0].ndbno);
-            //     $scope.food.ndbno =resp.data.list.item[0].ndbno;
-            //     console.log('ndbno is '+$scope.food.ndbno);
-            //     return $http({
-            //         method: 'GET',
-            //         url: "http://api.nal.usda.gov/ndb/reports/?ndbno="+$scope.food.ndbno+"&type=b&format=json&api_key=cUzkfSi8jXH1X8Ry4k2g3TK7S5oEqCnsYSGoQXXk"
-            //     })
-            //     .then(function(resp){
-            //         $scope.nutrition = resp.data;
-            //         console.log('nutritional information '+resp.data[0]);
-            //     });
-
-              
-            //   // recalculate the average rating of the artist
-            
-            // });
         
-    };
+        };
+        $scope.obj={};
+        $scope.obj.food="";
+        $scope.getNutrition = function(item){
+            appFactory.meals.breakfast = item;
+            console.log('hiiiii',appFactory.meals);
+            $scope.obj.food = item;
+           
+            $scope.test ="hii";
+            $location.path('/nutrition');
+            
+            console.log('hiiiiii');
+            console.log('sdfsfd',$scope.obj.food);
+           
+           
+            console.log(item);
+        }
     };
 
 })();
