@@ -1,7 +1,13 @@
 /* Empty. Add your own CSS if you like */
 /* Empty. Add your own CSS if you like */
 /*home*/
-
+.home_page{
+    background-image:url("img/home2.jpg");
+    /*background-size:380px 700px;*/
+    background-size: 119%;
+   
+   
+}
 #home, #signup, #email{
     position:relative;
     top:200px;
@@ -13,47 +19,56 @@
 }
 #signin{
     position:relative;
-    top:170px;
-    height:70px;
-    border:none;
+    top:180px;
+    height:0px;
+    left:7px;
+    text-align:Center;
+    color:white;
+    border-style:none;
+    background-color:transparent
+
 }
 #home_page, h2{
     font-family: 'Capriola', cursive;
     font-size: 40px;
     color: #8BC34A;
     position:relative;
-    top: 100px;
-    left:60px;
+    top: 170px;
+    left:80px;
+    color:white;
 }
 
 #home_page, p{
     font-family: 'Gloria Hallelujah', cursive;
     font-size: 30px;
     position:relative;
-    left:15px;
-    top: 80px;
+    left:25px;
+    top: 140px;
     padding:15px;
     margin:20px;
+    color:white;
 }
 
 #home_page, .h_line{
     position:relative;
-    top:100px;
+    top:160px;
     width:65%;
-    left:60px;
+    left:75px;
     height:1px;
-    background: grey ;
+    background: white ;
     }
 #setGoal{
-    top:110px;
-    left:70px;
-    width: 230px;
-    border-radius: 50%;
-    border:none;
-    height:230px;
-    background-color:#8BC34A;
-    font-size:25px;
+    top:25%;
+    left:25%;
+    width: 200px;
     color:white;
+    text-align:center;
+    border-radius: 50%;
+    border:double;
+    height:200px;
+    background-color:transparent;
+    font-size:25px;
+    
     font-family: 'Gloria Hallelujah', cursive;
 }
 /*goal view*/
@@ -429,13 +444,22 @@ input{
 
 }
 /*summury*/
+#box{
+    background-color: rgba(248, 247, 216, 0.3);
+    border-radius:20px;
+    margin:10px;
+    height:95%;
+    width:95%
+}
 .profile{
    
-    background-color:#9CCC65;
+    background-image:url("img/profile.jpg");
+    background-size:410px 670px
 }
 #calories {
     position: relative;
     font-size:20px;
+    color:white;
     width:350px;
     left:18px;
     top:260px;
@@ -445,12 +469,13 @@ input{
     border:0px;
 }
 .profile .list a{
-    background-color:#FCF4D9; 
+    background-color:transparent; 
     position:relative;
     top:240px;
     border-style:none;
     font-family:'Capriola', cursive; 
-    font-size:25px; 
+    font-size:25px;
+    color:white; 
     
 }
 #weight{
@@ -461,8 +486,16 @@ input{
     top:-190px; 
     font-family:'Capriola', cursive; 
     font-size:20px;  
+    color:white;
 }
 /****Breakfast**/
+#layer{
+    background-color: rgba(248, 247, 216, 0.2);
+    border-radius:20px;
+    margin:10px;
+    height:95%;
+    width:95%;
+}
 #breakfast {
     background-image: url("img/breakfast.jpg");
    
@@ -503,7 +536,7 @@ label{
     
 }
 /*******nutrition*********/
-.button{
+/*.button{
     position:relative;
     left:285px;
     border-radius:200px;
@@ -511,4 +544,4 @@ label{
     height:150px;
     text-align:left;
     background-color:transparent;
-}
+}*/

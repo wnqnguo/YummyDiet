@@ -11,6 +11,7 @@
         $scope.name = appFactory.meals.breakfast.name;
         $scope.nutrients = appFactory.meals.breakfast.nutrients;
         $scope.serving_size = appFactory.meals.breakfast.measure;
+       // console.log(nutrients);
 
        
        

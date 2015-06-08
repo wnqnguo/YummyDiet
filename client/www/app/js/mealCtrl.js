@@ -6,11 +6,9 @@
 
      function mealCtrl($scope,$http,$location,appFactory){
 
-        $scope.meals =[{name: 'omelet',calories: 200},{name: 'cereal',calories:300},
         
-        {name: 'oatmeal',calories:150},{name: 'blueberry muffin',calories:250},{
-         name: ''   
-        }];
+        
+        
         $scope.food = {};
         $scope.selectMeal=function(item){
 
