@@ -502,13 +502,3 @@ label{
     font-size:25px; 
     
 }
-/*******nutrition*********/
-.button{
-    position:relative;
-    left:285px;
-    border-radius:200px;
-    width:150px;
-    height:150px;
-    text-align:left;
-    background-color:transparent;
-}

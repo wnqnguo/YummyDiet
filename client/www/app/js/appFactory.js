@@ -7,6 +7,8 @@
         var appFactory = {};
         appFactory.user ={};
         appFactory.meals={};
+        appFactory.meals.breakfast={};
+
         //appFactory.meals.calories = 0;
         return appFactory;
      }

@@ -4,7 +4,7 @@ var userSchema = new mongoose.Schema({
     email    : String,
     password : String,
     current_weight: String
-
+       
     
     
   //breakfast: String
