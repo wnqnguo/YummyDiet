@@ -184,6 +184,12 @@ label{
 /******/
 /******/
 /*****stats*****/
+#stats_layer{
+    
+    height:100%;
+    width:100%;
+    
+}
 .stats h3{
   position:relative;
   top:px; 
@@ -191,7 +197,8 @@ label{
 }
 
 .stats{
-   background-color: #FFd000;
+    background-image: url("img/home3.jpg");
+   
 }
 .stats h3{
     position:relative;
@@ -206,7 +213,7 @@ label{
 .stats h4{
     position:relative;
     left:10px;
-    top:30px;
+    top:20px;
     color: white;
     font-size:25px;
     font-family: 'Gloria Hallelujah', cursive;
@@ -215,26 +222,45 @@ label{
 }
 .status_input{
     position:relative;
-    top:90px;
+    top:80px;
     width:400px;
     left:0px;
-    border-radius:10px;
+  
     font-family: 'Capriola', cursive;
 }
 .status_input input{
     border:none;
 }
 
+.status_input span{
+    color:white;
+}
+#input_layer{
+    position:relative;
+    top:40px;
+    background-color:rgba(248, 247, 216, 0.3);
+    height:200px;
+    width:300px;
+    left:30px;
+    border-radius:30px;
+}
 .status_input label{
-    border-bottom:solid 1px;
+   
+    top:-70px;
     font-weight: bold;
+    left:5px;
+    border:none;
     font-family: 'Capriola', cursive;
+    background-color:transparent;
+
 }
 .status_input #status_submit{
     position:relative;
-    top:10px;
-    left:200px;
-    text-align:left;
+    top:4px;
+    left:40px;
+    text-align:center;
+    background-color:transparent;
+    border-style: dashed;
 }
 /********weight and activity**************/
 .weight_activity{
@@ -444,51 +470,108 @@ input{
 
 }
 /*summury*/
+#calories {
+    position: relative;
+    top:10px;
+    background-color:transparent;
+    width:0px;
+    left:10px;
+
+    font-family:'Capriola', cursive;
+    font-size:20px;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.6);
+    
+
+}
 #box{
-    background-color: rgba(248, 247, 216, 0.3);
+    background-color: rgba(0, 0, 0, 0.6);
     border-radius:20px;
     margin:10px;
     height:95%;
-    width:95%
+    width:100%; 
 }
+#calorie_layer{
+    position:relative;
+    left:px;
+    top:500px;
+    height:60px;
+  width:95%;
+    border-radius:20px;
+    box-shadow: 0px 0px 15px #888;
+    background-color: rgba(0, 0, 0, 0.7);
+
+ }
 .profile{
    
     background-image:url("img/profile.jpg");
     background-size:410px 670px
 }
-#calories {
-    position: relative;
-    font-size:20px;
-    color:white;
-    width:350px;
-    left:18px;
-    top:260px;
-    font-family:'Capriola', cursive;
-}
+
 .profile #date{
     border:0px;
 }
+
+#meal_layer{
+    position:relative;
+    background-color: rgba(0, 0, 0, 0.5);
+     border-radius:20px;
+     box-shadow: 0px 0px 15px #888;
+     top:140px;
+     width:95%;
+
+}
+
 .profile .list a{
     background-color:transparent; 
     position:relative;
-    top:240px;
+    top:4px;
+    left:5px;
     border-style:none;
     font-family:'Capriola', cursive; 
     font-size:25px;
     color:white; 
     
 }
+
 #weight{
     position: relative;
     font-size:15px;
+   top:10px;
     width:350px;
-    left:20px;
-    top:-190px; 
+    left:10px; 
     font-family:'Capriola', cursive; 
     font-size:20px;  
     color:white;
+    border-radius:10px;
+    
+     height:50px;
+   
+  
+}
+#weight_layer{
+    position:relative;
+    top:-200px;
+    left:px;
+    height:60px;
+    border-radius:20px;
+    color:white
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 15px #888;
+    background-color: rgba(0, 0, 0, 0.6);
+    width:95%;
 }
 /****Breakfast**/
+#title_layer{
+    position:relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    top:60px;
+    left:10px;
+    width:340px;
+    border-radius:20px;
+    height:80px;
+}
+
 #layer{
     background-color: rgba(248, 247, 216, 0.2);
     border-radius:20px;
@@ -500,41 +583,60 @@ input{
     background-image: url("img/breakfast.jpg");
    
 }
+#search_layer{
+    position:relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius:10px;
+    top:70px;
+    left:10px;
+    width:340px;
+
+}
 #breakfast #what_to_eat{
     position:relative;
-    top:20px;
+    top:10px;
     color:white;
-     border-bottom:solid 1px white;
-
-    }
-form{
-  
+    background-color:transparent;
 }
 label{
     border:none;
-    color:transparent;
+    background-color:transparent;
+
+    left:30px;
 
 }
-#food{
-    position:relative;
-    top:100px;
-    background-color:transparent;
-}
+
 #food input{
-   background-color:white;
+   background-color:transparent;
+   border-bottom:1px solid white;
+   width:100px;
+    color:white;
+    font-family:'Capriola', cursive; 
+    font-size:20px;
 
 }
 #food label{
    background-color:transparent;
    border:none;
+  
 }
 #food .input-label{
     color:white;
-    border-bottom:solid 1px white;
     font-family:'Capriola', cursive; 
     font-size:25px; 
-    
 }
+#food_layer button{
+    position:relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius:10px;
+    top:70px;
+    height:20px;
+    color:white;
+    width:340px;
+    margin:10px;
+    border-style:none;
+}
+/*****
 /*******nutrition*********/
 /*.button{
     position:relative;

@@ -1,12 +1,13 @@
 <ion-view title="nutrition" ng-controller="nutritionCtrl" class="nutrition">
  
    <!--  <button class="button">add food</button> -->
-   <h1>hiiiiiii</h1>
-    <p>{{name}}</p>
+<ion-content>
+    <h1>{{name}}</h1>
+
     <div ng-repeat ="nutrient in nutrients">
       <p>{{nutrient.nutrient}}  {{nutrient.value}} {{nutrient.unit}}</p>
     </div>
 
-
+ </ion-content>
 
 </ion-view>

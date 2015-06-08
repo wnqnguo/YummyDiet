@@ -1,29 +1,8 @@
 <ion-view title="profile" ng-controller="AuthCtrl" class="profile">
     
 <div id = "box">
-        <div class="list" id="meals">
-        <a class="item item-icon" >
-            <i class="icon ion-coffee"></i>
-            Breakfast :400 cals
-            
-        </a>
-         <a class="item item-icon" href="#">
-            <i class="icon ion-pizza"></i>
-            Lunch : 500 cals
-            
-           
-        </a>
-        <a class="item item-icon" href="#">
-            <i class="ion-beer"></i>
-            Dinner : 500 cals
-        </a>
-        <a class="item item-icon" href="#">
-            <i class="icon ion-icecream"></i>
-            Snack : 0 cals
-            <i class></i>
-        </a>
-    </div>
-    <table id='calories'>
+    <div id ="calorie_layer">
+        <table id='calories'>
         <tr>
             <td>Cal Remaining:</td>
             <td>Cal Consumed:</td>
@@ -32,17 +11,46 @@
             <td>400 cal</td>
             <td>500 cal</td>
         </tr>
-    </table>
-    <table id='weight'>
-        <tr>
-            <td>current weight:</td>
-            <td>goal weight:</td>
-        </tr>
-        <tr>
-            <td>135 lbs</td>
-            <td>120 lbs</td>
-        </tr>
-    </table>
+        </table>
+    </div>
+    <div id="meal_layer">
+        <div class="list" id="meals">
+            <a class="item item-icon" >
+                <i class="icon ion-coffee"></i>
+                Breakfast :400 cals
+                
+            </a>
+             <a class="item item-icon" href="#">
+                <i class="icon ion-pizza"></i>
+                Lunch : 500 cals
+                
+               
+            </a>
+            <a class="item item-icon" href="#">
+                <i class="ion-beer"></i>
+                Dinner : 500 cals
+            </a>
+            <a class="item item-icon" href="#">
+                <i class="icon ion-icecream"></i>
+                Snack : 0 cals
+                <i class></i>
+            </a>
+        </div>
+    </div>
+    <div id="weight_layer"> 
+        <table id='weight'>
+            <tr>
+                <td>current weight:</td>
+                <td>goal weight:</td>
+            </tr>
+            <tr>
+                <td>135 lbs</td>
+                <td>120 lbs</td>
+            </tr>
+        </table>
+    </div>
+    
+
 </div>
 
     

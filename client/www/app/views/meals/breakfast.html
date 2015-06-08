@@ -1,17 +1,25 @@
  <ion-view title="breakfast" class="has-header has-subheader" ng-controller="mealCtrl" id="breakfast" i>
    <div id="layer">
-      <p id="what_to_eat">What would you like to eat?</p>
-            <form ng-submit="search(meal)" id='food'> 
+      <div id='title_layer'>
+         <p id="what_to_eat">What would you like to eat?</p>
+      </div>
+      <div id="search_layer">
+         <form ng-submit="search(meal)" id='food'> 
                   <label class="item item-input">
                   <span class="input-label"> enter food:</span>
                   <input type="text" ng-model="meal">
                   </label>
-            </form>   
-      <div ng-repeat = 'item in names'>
-           <button class="button button-block button-calm" ng-click =" getNutrition(item)">
-            {{item}}
-            </button>
+         </form>  
       </div>
+      <div id='food_layer'>
+         <div ng-repeat = 'item in names'>
+              <button class="button" ng-click =" getNutrition(item)">
+               {{item}}
+               </button>
+         </div>
+      </div>
+             
+     
 
    </div>
 

@@ -79,8 +79,9 @@
                 console.log(typeof resp.data);
                 console.dir(obj);
                 appFactory.meals.breakfast.nutrients = obj.report.foods[0].nutrients;
-                $location.path('/nutrition');
-                //console.log('nutrition information',obj.report.foods[0]);
+                console.log('stwtiching to nutrition');
+                 $location.path('/nutrition');
+                console.log('nutrition information',obj.report.foods[0]);
 
             });
             
