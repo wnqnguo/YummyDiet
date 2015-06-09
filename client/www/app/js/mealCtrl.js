@@ -1,10 +1,10 @@
 (function(){
     'use strict';
      angular.module('myApp.mealCtrl',[])
-     .controller('mealCtrl',['$scope','$http','$location','appFactory',mealCtrl]);
+     .controller('mealCtrl',['$scope','$window','$http','$location','appFactory',mealCtrl]);
      
 
-     function mealCtrl($scope,$http,$location,appFactory){
+     function mealCtrl($scope,$window,$http,$location,appFactory){
 
         
         
@@ -79,6 +79,10 @@
                 console.log(typeof resp.data);
                 console.dir(obj);
                 appFactory.meals.breakfast.nutrients = obj.report.foods[0].nutrients;
+                var nutrients = appFactory.meals.breakfast.nutrients;
+                // window.locationStorage['nutrients'] = appFactory.meals.breakfast.nutrients;
+                $window.localStorage['name']='Max';
+                console.log($window.localStorage['name']);
                 console.log('stwtiching to nutrition');
                  $location.path('/nutrition');
                 console.log('nutrition information',obj.report.foods[0]);

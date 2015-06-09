@@ -215,8 +215,8 @@ label{
     left:10px;
     top:20px;
     color: white;
-    font-size:25px;
-    font-family: 'Gloria Hallelujah', cursive;
+    font-size:20px;
+    font-family: 'Capriola', cursive;
     margin:10px;
 
 }
@@ -236,6 +236,7 @@ label{
     color:white;
 }
 #input_layer{
+
     position:relative;
     top:40px;
     background-color:rgba(248, 247, 216, 0.3);
@@ -243,6 +244,8 @@ label{
     width:300px;
     left:30px;
     border-radius:30px;
+    box-shadow: 0px 0px 15px #888;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 .status_input label{
    
@@ -510,6 +513,9 @@ input{
 .profile #date{
     border:0px;
 }
+.cal{
+    text-align:right
+}
 
 #meal_layer{
     position:relative;
@@ -518,7 +524,16 @@ input{
      box-shadow: 0px 0px 15px #888;
      top:90px;
      width:95%;
+     height:220px
 
+}
+#meals{
+    height:200px;
+    padding:20px;
+    left:10px;
+    margin:5px;
+    font-family:'Capriola', cursive;
+    font-size:25px;
 }
 
 .profile .list a{
@@ -574,6 +589,8 @@ input{
 #title_layer{
     position:relative;
     background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 15px #999;
+ 
     top:60px;
     left:10px;
     width:340px;
@@ -582,7 +599,7 @@ input{
 }
 
 #layer{
-    background-color: rgba(248, 247, 216, 0.2);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius:20px;
     margin:10px;
     height:95%;
@@ -595,6 +612,7 @@ input{
 #search_layer{
     position:relative;
     background-color: rgba(0, 0, 0, 0.5);
+     box-shadow: 0px 0px 15px #999;
     border-radius:10px;
     top:70px;
     left:10px;
@@ -656,3 +674,9 @@ label{
     text-align:left;
     background-color:transparent;
 }*/
+.info, p{
+   color: black;
+}
+.info, div{
+    color:black;
+}
