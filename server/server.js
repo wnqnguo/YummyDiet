@@ -14,7 +14,9 @@ var request = require('request');
 
 
 
-mongoose.connect('mongodb://localhost:27017/users');
+// mongoose.connect('mongodb://localhost:27017/users');
+var configDB = require('./config/database.js');
+mongoose.connect(configDB.url);
 
 require('../config/passport')(passport); // pass passport for configuration
 
