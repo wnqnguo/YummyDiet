@@ -38,15 +38,12 @@
     color:white;
 }
 
-#home_page, p{
-    font-family: 'Gloria Hallelujah', cursive;
-    font-size: 30px;
+.quote{
     position:relative;
-    left:25px;
-    top: 140px;
-    padding:15px;
-    margin:20px;
-    color:white;
+    top:170px;
+    width:250px;
+    height:110px;
+    left:80px;
 }
 
 #home_page, .h_line{
@@ -619,6 +616,10 @@ input{
     width:340px;
 
 }
+.button{
+     background-color: rgba(0, 0, 0, 0.5);
+     box-shadow: 0px 0px 15px #999;
+}
 #breakfast #what_to_eat{
     position:relative;
     top:10px;
@@ -675,8 +676,46 @@ label{
     background-color:transparent;
 }*/
 .info, p{
-   color: black;
+   color: white;
+   position:relative;
+   top:50px;
+   font-family:'Capriola', cursive;
+   font-size:25px;
+
 }
 .info, div{
-    color:black;
+    color:white;
+    
 }
+.nutrition{
+    background-image: url("img/bg6.jpg");
+    background-size:550px 700px;
+}
+#info{
+
+     background-color: rgba(0, 0, 0, 0.5);
+     box-shadow: 0px 0px 15px #999;
+     height:600px;
+     width:350px;
+     margin:10px;
+     border-radius:10px;
+    
+}
+.nutrition_info{
+    position:relative;
+    top:60px;
+    left:30px;
+    font-size:20px;
+}
+.nutrition_info,.number{
+    text-align:right;
+    margin:20px;
+    padding:10px;
+}
+.nutrition_info,macro{
+    text-align:left;
+    maring:20px;
+    padding:10px;
+}
+
+

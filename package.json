@@ -31,6 +31,21 @@
     "gulp-util": "^2.2.14",
     "shelljs": "^0.3.0"
   },
+  "scripts": {
+    "start": "node server/server.js"
+  },
+  "engines": {
+    "node": "0.12.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wnqnguo/YummyDiet.git"
+  },
+   "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
   "cordovaPlugins": [
     "cordova-plugin-device",
     "cordova-plugin-console",
@@ -41,4 +56,5 @@
   "cordovaPlatforms": [
     "ios"
   ]
+
 }
