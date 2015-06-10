@@ -8,32 +8,38 @@
         <div id="input_layer">
                 <div class='status_input'>
             
-                <label class="item item-input">
+                <label class="item item-input" >
                 <span class="input-label" >Current Weight</span>
-                <input type="numbers" >
+                <input type="numbers" ng-value="curr_weight" style="width:200px" >lbs
 
                 </label>
-                
+           
             
                 <label class="item item-input">
-                <span class="input-label" >Height</span>
-                    <input type="numbers" >
+                <span id = "height"class="input-label" >Height</span>
+                    <input id ="ft"style="width:20px" type="numbers" ng-value="height_ft">ft
+                    <input id ="inch" style="width:s20px" type="numbers" ng-value="height_in">inche
+                    <br>
+
+                  
                 </label>
              
            
                 <label class="item item-input">
                 <span class="input-label" >Gender</span>
-                <input type="numbers" >
+                <button class='button button-stable' id="male_button" >Male</button>
+                <button class='button button-stable' id="female_button">Female</button>
+               
                 </label>
                
            
                 <label class="item item-input">
                 <span class="input-label" >Birthdate</span>
-                <input type="date" >
+                <input type="date" ng-model="birthdays" >
                 </label>
                 
             
-                 <button class="button button-stable button-block" id="status_submit" ng-click="setGoalWeight()">Set My Goal</br>Weight</button>
+                 <button class="button button-stable button-block" id="status_submit" ng-click="setGoalWeight(curr_weight,height_ft, height_in)">Set My Goal</br>Weight</button>
         </div>
         </div>
 

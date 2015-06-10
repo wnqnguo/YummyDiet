@@ -26,7 +26,6 @@
     color:white;
     border-style:none;
     background-color:transparent
-
 }
 #home_page, h2{
     font-family: 'Capriola', cursive;
@@ -222,12 +221,16 @@ label{
     top:80px;
     width:400px;
     left:0px;
-  
+    color:white;
     font-family: 'Capriola', cursive;
 }
 .status_input input{
     border:none;
+    color:white;
+    font-family:'Capriola', cursive;
+    font-weight:bold;
 }
+
 
 .status_input span{
     color:white;
@@ -249,9 +252,29 @@ label{
     top:-70px;
     font-weight: bold;
     left:5px;
+    width:250px;
     border:none;
     font-family: 'Capriola', cursive;
     background-color:transparent;
+    color:white;
+
+}
+#male_button{
+    left:-10px;
+    width:80px;
+    border-radius:50%;
+    font-family: 'Capriola', cursive;
+    border-style:dashed;
+  
+  
+}
+#female_button{
+    width:80px;
+    left:-5px;
+    text-align:center;
+    border-radius:50%;
+    border-style:dashed;
+    font-family: 'Capriola', cursive;
 
 }
 .status_input #status_submit{

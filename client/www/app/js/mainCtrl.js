@@ -40,23 +40,26 @@
         };
    
     
-        $scope.setWeightHeight=function(height,weight){
-            appFactory.user.height = height;
-            appFactory.user.weight = weight;
-            $location.path('/activity');
+        $scope.setGoalWeight = function(curr_weight, height_ft, height_in){
+            console.log('curr_weight is', curr_weight);
+            appFactory.user.height_ft = height_ft;
+           // appFactory.user.curr_weight = weight;
+            //$location.path('/activity');
         };
         $scope.setAge = function(item){
             appFactory.user.age = item;
             $location.path('/heightAndWeight');
         };
-        $scope.setStatus = function(){
-            console.log('inside setStatus');
+        $scope.setStatus = function(goal,date){
+            console.log('inside setStatus', goal,date);
+            appFactory.user.goal = goal;
+            appFactory.user.goalDate = date; 
             $location.path('/stats');
         }
-        $scope.setGoalWeight = function(){
-            console.log('inside going to activity');
-            $location.path('/activity');
-        }
+        // $scope.setGoalWeight = function(){
+        //     console.log('inside going to activity');
+        //     $location.path('/activity');
+        // }
         $scope.setCalorieBudget = function(){
             $location.path('/CalorieBudget');
         }

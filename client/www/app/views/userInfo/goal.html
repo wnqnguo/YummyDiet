@@ -10,7 +10,7 @@
                 
                 <label id="weight_label" class="item item-input">
                 <span class="input-label" ></span>
-                <input id='goal'type="text" placeholder="Loose 20 pounds">
+                <input id='goal'type="text" placeholder="Loose 20 pounds" ng-model="goal_str">
                 </label>
                 <h3 id='i_will'>I will</h3>
                
@@ -18,14 +18,14 @@
                 <h3 id='by'>By</h3>
                 <label id='date_label'class="item item-input">
                 <span class="input-label" ></span>
-                <input id="date" type="date" placeholder="Future Date">
+                <input id="date" type="date" placeholder="Future Date" ng-model = "date">
                 </label>
                 
           
         
        
         </div>
-         <button  id ='setStatus' ng-click="setStatus()">Set My Stats</button> 
+         <button  id ='setStatus' ng-click="setStatus(goal_str, date)">Set My Stats</button> 
         
  </ion-content>
 </ion-view>
