@@ -6,48 +6,36 @@
             they merely determine where you start</h4>
             
         <div id="input_layer">
+            <!-- <form novalidate class="simple-form">
+                Name: <input type="text" ng-model="user.name" />
+                E-mail: <input type="email" ng-model="user.email" />
+                Gender: <input type="radio" ng-model="user.gender" value="male" />male
+                <input type="radio" ng-model="user.gender" value="female" />female<br />
+                <input type="button" ng-click="reset()" value="Reset" />
+                <input type="submit" ng-click="update(user)" value="Save" />
+            </form>
+           
+            <pre>master = {{master | json}}</pre> -->
                 <div class='status_input'>
-            
-                <label class="item item-input" >
-                <span class="input-label" >Current Weight</span>
-                <input type="numbers" ng-value="curr_weight" style="width:200px" >lbs
-
-                </label>
-           
-            
-                <label class="item item-input">
-                <span id = "height"class="input-label" >Height</span>
-                    <input id ="ft"style="width:20px" type="numbers" ng-value="height_ft">ft
-                    <input id ="inch" style="width:s20px" type="numbers" ng-value="height_in">inche
-                    <br>
-
-                  
-                </label>
-             
-           
-                <label class="item item-input">
-                <span class="input-label" >Gender</span>
-                <button class='button button-stable' id="male_button" >Male</button>
-                <button class='button button-stable' id="female_button">Female</button>
-               
-                </label>
-               
-           
-                <label class="item item-input">
-                <span class="input-label" >Birthdate</span>
-                <input type="date" ng-model="birthdays" >
-                </label>
+                 <form novalidate class="simple-form">
+                Current Weight:  <input id ="curr_weight" type="numbers" "style=width:100px" ng-model = "user.curr_weight" />lbs<br />
+                Height: <input id="ft" type="numbers" ng-model = "user.height_ft" />ft
+                        <input id="inches" type="numbers" ng-model = "user.height_inch" />inches<br />
+                Gender: <input id="male_button" input type="radio" ng-model = "user.gender" value="male" />male
+                <input id="female_button" type="radio" ng-model = "user.gender" value="female" />female<br />
+                Birthday: <input id = "birthday" type = "date" ng-model = "user.birthday" />
                 
             
-                 <button class="button button-stable button-block" id="status_submit" ng-click="setGoalWeight(curr_weight,height_ft, height_in)">Set My Goal</br>Weight</button>
-        </div>
-        </div>
+                 <button class="button button-stable button-block" id="status_submit" ng-click="setGoalWeight(user)">Set My Goal</br>Weight</button>
+             </form>
+             
+            </div>
 
 
-    </div>
+         </div>
     	
 
             	
-		  		
+	</div>	  		
         
  </ion-view>
