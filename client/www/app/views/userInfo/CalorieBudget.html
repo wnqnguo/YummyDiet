@@ -1,11 +1,32 @@
  <ion-view title="summary"  ng-controller="AuthCtrl" class="Budget">
-   
+   <!-- 
         <p id="title">My Calorie Budget</p>
-        <p id="summary">This is your recommended calorie budget is 1500 cal</p>
+        <p id="summary">This is your recommended calorie budget is {{recommended_cal}} cal</p>
         <div class="item range">
             <input type="range" name="volume">
         </div>
-        <button class="button button-stable button-block" id="last_submit" ng-click="signup()">Sign Up</button> 
+        <button class="button button-stable" id="last_submit" ng-click="signup()">Sign Up</button>  -->
+        <div id="orange_layer">
+        <div id = "goal_layer">
+	        <h3>My Calorie Budget</h3>
+	        <h4> This is your recommended calorie budget is {{recommended_cal}} cal</h4>
+	            
+	        <div id="calorie1_layer">
+	            
+	      
+	              
+	                 
+	                
+	                <input type="range" name="volume" ng-model="data.volume">
+	            	<p>Volume : {{data.volume}}</p>
+	            	
+	                 <button class="button button-stable button-block" id="goalweight_submit" ng-click="setCalorieBudget(user)">Calorie Budget</button>
+	             	
+	             
+	            	
+	        </div>
+    	</div>          
+    	</div>
                 
            
  </ion-view>

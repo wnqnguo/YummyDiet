@@ -1,4 +1,4 @@
- <ion-view title="breakfast" class="has-header has-subheader" ng-controller="mealCtrl" id="breakfast" i>
+ <ion-view title="breakfast" class="has-header has-subheader" ng-controller="mealCtrl" id="breakfast" >
    <div id="layer">
       <div id='title_layer'>
          <p id="what_to_eat">What would you like to eat?</p>
@@ -13,7 +13,7 @@
       </div>
       <div id='food_layer'>
          <div ng-repeat = 'item in names'>
-              <button class="button" ng-click =" getNutrition(item)">
+              <button class="button" ng-click ="getNutrition(item)">
                {{item}}
                </button>
          </div>

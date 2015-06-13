@@ -6,15 +6,17 @@
 
      function mealCtrl($scope,$window,$http,$location,appFactory){
 
-        
-        
+        //set 
+        // appFactory.meals.breakfast.name = "";
+         appFactory.meals.breakfast.calorie= 0;
+         console.log('in side of mealCtrl');
         
         $scope.food = {};
         $scope.selectMeal=function(item){
 
             console.log(item);
             appFactory.meals.breakfast = item;
-            appFactory.meals.calories += item.calories;
+            //appFactory.meals.breakfast = item;
             $scope.calorieSum = appFactory.meals.calories;
 
             console.log('called selectMeal');
@@ -22,7 +24,7 @@
             //$location.path('/height');
         };
         $scope.search = function(item){
-            
+            //$scope.breakfastCal = 
             $scope.items=[];
             $scope.food.name = item;
             $scope.names = [];
@@ -60,13 +62,14 @@
         $scope.getNutrition = function(item){
             appFactory.meals.breakfast.name=item;
             var index = $scope.names.indexOf(item);
+            console.log('called get nutrition');
            
             appFactory.meals.breakfast.ndbno=$scope.ndbnos[index];
             console.log('the number is ',$scope.ndbnos[index]);
             console.log('inside of getNutrition');
             console.log('hiiiii',appFactory.meals);
             $scope.obj.food = item;
-            
+           
             $scope.test ="hii";
              return $http({
               method: 'GET',
@@ -81,7 +84,7 @@
                 appFactory.meals.breakfast.nutrients = obj.report.foods[0].nutrients;
                 var nutrients = appFactory.meals.breakfast.nutrients;
                 // window.locationStorage['nutrients'] = appFactory.meals.breakfast.nutrients;
-                $window.localStorage['name']='Max';
+                //$window.localStorage['name']='Max';
                 console.log($window.localStorage['name']);
                 console.log('stwtiching to nutrition');
                  $location.path('/nutrition');
@@ -91,6 +94,15 @@
             
             
         }
+       $scope.setBreakfast = function(){
+          $scope.breakfastCal = 600;
+          $location.path('/breakfast');
+         
+
+
+       }
+
+
     };
 
 })();

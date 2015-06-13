@@ -51,6 +51,7 @@ angular.module('myApp',['ionic',
     $stateProvider.state('profile', {
       url: '/profile',
       templateUrl: 'app/views/auth/profile.html',
+      controller: 'AuthCtrl'
     });
    
      $stateProvider.state('goal', {
@@ -77,10 +78,14 @@ angular.module('myApp',['ionic',
      $stateProvider.state('breakfast', {
       url: '/breakfast',
       templateUrl: 'app/views/meals/breakfast.html',
+      controller: 'mealCtrl'
+
+
     });
      $stateProvider.state('nutrition', {
       url: '/nutrition',
       templateUrl: 'app/views/meals/nutrition.html',
+      controller: 'nutritionCtrl'
     })
   //if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/home');

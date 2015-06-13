@@ -1,12 +1,32 @@
  <ion-view title="activity"  ng-controller="activityCtrl" class='weight_activity'>
-     <p id='weight_title'>My Goal Weight</p>
-     <p id='weight_range'> Your ideal weight is {{idealWeight}}lbs, please set your goal weight </p>
+     <!-- <p id='weight_title'>My Goal Weight</p>
+     <p id='weight_range'> Your healthy weight is {{idealWeight}}lbs, please set your goal weight </p>
 	     
-	     <label id="setWeight" class ="item item-input">
-	        <span class="input-label" >Goal Weight</span>
-	        <input type="numbers" >
-		</label>
-		<button class="button button-stable button-block" id="goalweight_submit" ng-click="setCalorieBudget()">Set My</br>Calorie Budget</button>
+	    <form id ='getGoalWeight'>
+	       Goal Weight:<input type="numbers" ng-model="goal_weight">lbs
+		</form>
+		<button class="button button-stable button-block" id="goalweight_submit" ng-click="setCalorieBudget(goal_weight)">Set My</br>Calorie Budget</button> -->
+	<div id="orange_layer">
+        <div id = "goal_layer">
+        <h3>My Goal Weight</h3>
+        <h4> Your healthy weight is {{idealWeight}}lbs, please set your goal weight</h4>
+            
+        <div id="square_layer">
+            
+      
+                <div class='goal_input'>
+                 <form novalidate class="simple-form">
+                
+                Goal Weight: <input id = "goal_date" type = "numbers" ng-model = "user.goalWeight" />
+                
+            
+                 <button class="button button-stable button-block" id="goalweight_submit" ng-click="setCalorieBudget(user)">Calorie Budget</button>
+             </form>
+             
+            </div>
+        </div>
+    </div>          
+    </div>
      
             	
 	

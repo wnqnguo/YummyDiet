@@ -8,6 +8,7 @@
         appFactory.user ={};
         appFactory.meals={};
         appFactory.meals.breakfast={};
+        appFactory.obj = {breakfastCal : 0};
 
         //appFactory.meals.calories = 0;
         return appFactory;

@@ -11,10 +11,24 @@
         $scope.name = appFactory.meals.breakfast.name;
         $scope.nutrients = appFactory.meals.breakfast.nutrients;
         $scope.serving_size = appFactory.meals.breakfast.measure;
-       // console.log(nutrients);
+        $scope.$on('$stateChangeSuccess', function () {
+            console.log('inside nutritionnnnnnnnnnn');
+            appFactory.obj.breakfastCal = $scope.nutrients[3].value ;
+            console.log('new cal',appFactory.obj.breakfastCal );
+        });
+        appFactory.meals.cal = $scope.nutrients[3].value; 
+        console.log('cal value',$scope.nutrients[3].value);
 
-       
-       
-    };
+         
+
+         $scope.SetBreakfast = function(){
+
+            $location.path('/profile');
+            
+            
+            console.log('scope variable after redirecting',$scope);
+         }
+
+       };
 
 })();

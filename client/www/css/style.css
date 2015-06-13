@@ -67,116 +67,121 @@
     
     font-family: 'Gloria Hallelujah', cursive;
 }
+
 /*goal view*/
-/*goal view*/
- #set_goal,#i_will{
-    color: black;
-    position:relative;
-    top:-20px;
-    left:0px;
-    width:70px;
+#orange_layer{
+    background-color: rgba(0, 0, 0, 0.5);
+     box-shadow: 0px 0px 15px #999;
+     height:600px;
+     width:350px;
+     margin:15px;
+     border-radius:10px;
+}
+#goal_layer{
+    
+    height:100%;
+    width:100%;
     
 }
-#goal_input,#by{
-    color: black;
-    position:relative;
-    top: 30px;
-    left:0px;
-    width:40px;
+.goal h3{
+  position:relative;
+  top:px; 
+  color:black; 
 }
-#goal_input,#weight_label{
-  
-    position:relative;
-    top:30px;
-    left:100px;
-    width:200px;
-    border:none;
-}
-#goal_input ,#goal{
-    border:none;
-    position:relative;
-    top:0px;
-    width:25px;
-    left:0px;
+
+.goal{
+    background-image: url("img/goal.jpg");
    
- }
-  #goal_input,#date_label{
-    position:relative;
-    top:-10px;
-    left:100px;
-    width:200px;
-    border:none;
- }
-   #goal_input,#date{
-    position:relative;
-    top:-10px;
-    left:20px;
-    width:200px;
-
- }
- input{
-     border-style:none;
- }
-label{
-    position: relative;
-    left:90px;
-    width:200px;
-    border-style:none;
-
 }
-
-#goal_input{
-    position:relative;
-    background-color:white;
-    border-radius:20px;
-    height:250px;
-    top:-30px;
-    margin:0px;
-    left:15px;
-    width:330px;
-}
-.goalPage #cancel{
-    position: relative;
-    color:white;
-    font-size:22px;
-    left:10px;
-    font-family: 'Gloria Hallelujah', cursive;
-}
-#goalPage,h4{
+.goal h3{
     position:relative;
     left:100px;
+    top:30px;
     color: white;
     font-size:40px;
     font-family: 'Capriola', cursive;
     margin:10px;
 
 }
-#goalPage,h3{
+.goal h4{
     position:relative;
-    top:0px;
-    font-size:25px;
-    font-family: 'Gloria Hallelujah', cursive;
-    color:white;
+    left:10px;
+    top:20px;
+    color: white;
+    font-size:20px;
+    font-family: 'Capriola', cursive;
     margin:10px;
-}
-#setStatus{
-    position:relative;
-    top:0px;
-    left:180px;
-    width: 230px;
-    border-radius: 50%;
-    border:none;
-    height:230px;
-    background-color:#FFd000;
-    font-size:25px;
-    color:white;
-    font-family: 'Gloria Hallelujah', cursive;
-    text-align:left;
 
 }
-.goalPage{
-  background-color:#8BC34A;  
+.goal_input{
+    position:relative;
+    top:80px;
+    width:400px;
+    left:0px;
+    color:white;
+    font-family: 'Capriola', cursive;
 }
+.goal_input input{
+    border:none;
+    color:white;
+    font-family:'Capriola', cursive;
+    font-weight:bold;
+}
+input#goal_input{
+    position:relative;
+    width:50px;
+    margin-left:20px;
+    background-color:transparent;
+    margin-bottom:10px;
+}
+input#birthday{
+    width:50px;
+    margin-left:10px;
+    background-color:transparent;
+    margin-bottom:10px;
+}
+
+#birthday{
+    position:relative;
+    top: -10px;
+    left:-120px;
+    float:right;
+    background-color:transparent
+}
+#square_layer{
+
+    position:relative;
+    top:40px;
+    background-color:rgba(248, 247, 216, 0.3);
+    height:200px;
+    width:300px;
+    left:40px;
+    border-radius:30px;
+    box-shadow: 0px 0px 15px #888;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding:5px;
+    font-size:20px;
+}
+.goal_input, .simple-form{
+    position: relative;
+    top: 20px;
+}
+.goal_input #goal_submit{
+    position:relative;
+    top:140px;
+    text-align:center;
+    background-color:transparent;
+    border-style: dotted;
+    left:20px;
+    width: 230px;
+    border-radius: 50%;
+    height:230px;
+    font-size:25px;
+    color:black;
+    background-color:white;
+}
+/*goal view*/
+
 /******/
 /******/
 /*****stats*****/
@@ -193,8 +198,16 @@ label{
 }
 
 .stats{
-    background-image: url("img/home3.jpg");
+    background-image: url("img/stats5.jpg");
    
+}
+#berry_layer{
+    background-color: rgba(0, 0, 0, 0.5);
+     box-shadow: 0px 0px 15px #999;
+     height:600px;
+     width:350px;
+     margin:15px;
+     border-radius:10px;
 }
 .stats h3{
     position:relative;
@@ -251,12 +264,14 @@ input#ft,#inches{
     margin-left:55px;
     margin-bottom:15px;
 }
-#birthday{
+input#birthday{
     position:relative;
-    top: -10px;
+    top: -0px;
     left:-120px;
     float:right;
-    background-color:transparent
+    width:160px;
+    background-color:white;
+    color:black;
 }
 #input_layer{
 
@@ -265,7 +280,7 @@ input#ft,#inches{
     background-color:rgba(248, 247, 216, 0.3);
     height:200px;
     width:300px;
-    left:40px;
+    left:30px;
     border-radius:30px;
     box-shadow: 0px 0px 15px #888;
     background-color: rgba(0, 0, 0, 0.5);
@@ -281,12 +296,40 @@ input#ft,#inches{
     top:140px;
     left:40px;
     text-align:center;
-    background-color:transparent;
+    color:black;
+    background-color:white;
     border-style: dashed;
 }
 /********weight and activity**************/
+#getGoalWeight{
+    position:relative;
+    top:100px;
+    font-size:25px;
+    font-family: 'Capriola', cursive;
+}
+.Budget h3{
+    position:relative;
+    left:0px;
+    top:30px;
+    color: white;
+    font-size:40px;
+    font-family: 'Capriola', cursive;
+    margin:10px;
+}
+.Budget h4{
+    position:relative;
+    left:10px;
+    top:20px;
+    color: white;
+    font-size:20px;
+    font-family: 'Capriola', cursive;
+    margin:10px;
+
+}
+
 .weight_activity{
-   background-color: #4a1484;
+   background-image: url("img/activity.jpg");
+   background-size:1100px;
    color:white;
 }
 #weight_title{
@@ -310,22 +353,38 @@ input{
 }
 #goalweight_submit{
     position:relative;
-    background-color:#98FFCC;
-    top:165px;
-    left:185px;
+    top:240px;
+    text-align:center;
+    background-color:transparent;
+    border-style: dotted;
+    left:20px;
     width: 230px;
-    height:230px;
     border-radius: 50%;
-    border:none;
-    font-size: 25px;
-    font-family: 'Gloria Hallelujah', cursive;
-    text-align:left;
+    height:230px;
+    font-size:25px;
+    color:black;
+    background-color:white;
+    
 }
 /******Calorie Budget**********/
 .Budget{
-  background-color:#EC407A;
+  background-image: url("img/summary.jpg");
 
 
+}
+#calorie1_layer{
+
+    position:relative;
+    top:40px;
+    background-color:rgba(248, 247, 216, 0.3);
+    height:200px;
+    width:300px;
+    left:30px;
+    border-radius:30px;
+    box-shadow: 0px 0px 15px #888;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding:5px;
+    font-size:20px;
 }
 .Budget #title{
     position:relative;
@@ -345,12 +404,12 @@ input{
 }
 .item.range{
     position:relative;
-    top:40px;
-    left:35px;
+    top:0px;
+    left:-3px;
     height:100px;
     width:300px;
     border:none;
-    background-color:#EC407A;
+    background-color:transparent;
 }
 #last_submit{
     position:relative;
@@ -479,12 +538,11 @@ input{
     left:150px;
     width: 230px;
     border-radius: 50%;
-    border:none;
+  
     height:230px;
     background-color:#4a1484;
     font-size:25px;
     color:white;
-    font-family: 'Gloria Hallelujah', cursive;
 
 }
 .height_Weight{
@@ -535,7 +593,11 @@ input{
 .cal{
     text-align:right
 }
+#breakfast_button{
+    width:100px;
+    font-size:10px;
 
+}
 #meal_layer{
     position:relative;
     background-color: rgba(0, 0, 0, 0.5);
@@ -566,7 +628,17 @@ input{
     color:white; 
     
 }
-
+#breakfast_button{
+    position:relative;
+    top:-45px;
+    font-size:20px;
+    width:inherit;
+    background-color:transparent;
+    color:white;
+    border-style:none;
+    margin-left:30px;
+    font-weight:bold;s
+}
 #weight{
     position: relative;
     font-size:15px;
@@ -739,5 +811,10 @@ label{
     maring:20px;
     padding:10px;
 }
-
+#addFood{
+    position:relative;
+    top:200px;
+    font-family:'Capriola', cursive;
+    font-size:20px;
+}
 

@@ -1,4 +1,5 @@
-<ion-view title="profile" ng-controller="AuthCtrl" class="profile">
+<ion-view title="profile" class="profile">
+
 
 <div id = "box">
     <button id="setting">Setting </button>
@@ -18,8 +19,10 @@
         <div class="list" id="meals" >
             <table id='meals'>
         <tr>
-            <td style="color:white"><i class="icon ion-coffee" ></i>Breakfast:</td>
-            <td class="cal" style="color:#baffc9">500 cals</td>
+            <td style="color:white"><i class="icon ion-coffee" ></i>
+                <button class="button button-stable button-block" id ="breakfast_button"ng-click="searchBreakfast()">Breakfast</button>
+                
+            <td class="cal" style="color:#baffc9">{{breakfastCal}}cals</td>
         </tr>
         <tr>
             <td style="color:white"><i class="icon ion-pizza"></i>Lunch:</td>

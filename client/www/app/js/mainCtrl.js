@@ -1,12 +1,17 @@
 (function(){
     'use strict';
      angular.module('myApp.mainCtrl',[])
-     .controller('mainCtrl',['$scope','$rootScope','$http','$location', 'appFactory',mainCtrl]);
+     .controller('mainCtrl',['$scope','$http','$location', 'appFactory',mainCtrl]);
 
 
-    function mainCtrl($scope,$rootScope,$http,$location,appFactory){
+    function mainCtrl($scope,$http,$location,appFactory){
         console.log('inside mainCtrl');
+         //$location.path('/goal')
         var user={};
+        $scope.signupEmail = function(){
+            console.log('signing up with email');
+            $location.path('/goal');
+         };
         $scope.setGoal = function (item){
              appFactory.user.goal = item;
              $location.path('/genderandAge');
@@ -43,8 +48,8 @@
             var age = (time2-time1)/(1000*24*3600*356);
             var weight;
             appFactory.user.age = age;
-            console.log('height  in foot',user.height_ft);
-            console.log('height  in inch',user.height_inch);
+            console.log('height in foot',user.height_ft);
+            console.log('height in inch',user.height_inch);
             if(user.gender==="female"){
                 if(user.height_ft<5){
                     //JD Robinson's algorithm for ideal body weight
@@ -74,23 +79,17 @@
             appFactory.user.age = item;
             $location.path('/heightAndWeight');
         };
-        $scope.setStatus = function(goal,date){
-            console.log('inside setStatus', goal,date);
-            appFactory.user.goal = goal;
-            appFactory.user.goalDate = date; 
+        $scope.setStatus = function(user){
+            //console.log('inside setStatus', goal,date);
+            appFactory.user.goal = user.goal;
+            appFactory.user.goalDate = user.goal_date; 
             $location.path('/stats');
         };
-        // $scope.setGoalWeight = function(){
-        //     console.log('inside going to activity');
-        //     $location.path('/activity');
+
+        
         // }
-        $scope.setCalorieBudget = function(){
-            $location.path('/CalorieBudget');
-        };
-        $scope.signupEmail = function(){
-            console.log('signing up with email');
-            $location.path('/goal');
-         };
+     
+       
       
 
 };
@@ -98,3 +97,4 @@
     
     
 })();
+

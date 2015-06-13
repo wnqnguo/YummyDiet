@@ -1,4 +1,4 @@
- <ion-view title="name"  ng-controller="mainCtrl" class="goalPage"
+<!--  <ion-view title="name"  ng-controller="mainCtrl" class="goalPage"
   <ion-content>
         <button  id="cancel" class="button button-clear button-light">
             Cancel
@@ -28,4 +28,33 @@
          <button  id ='setStatus' ng-click="setStatus(goal_str, date)">Set My Stats</button> 
         
  </ion-content>
-</ion-view>
+</ion-view> -->
+
+ <ion-view title="goal" class="goal" ng-controller="mainCtrl">
+    <div id="orange_layer">
+        <div id = "goal_layer">
+        <h3>My Goal</h3>
+        <h4> If it doesn't challenge you, it doesn't change you</h4>
+            
+        <div id="square_layer">
+            
+      
+                <div class='goal_input'>
+                 <form novalidate class="simple-form">
+                I will:  <input id ="goal_string" type="text" "style=width:100px" ng-model = "user.goal" />
+             
+              
+                
+                by: <input id = "goal_date" type = "date" ng-model = "user.goal_date" />
+                
+            
+                 <button class="button button-stable button-block" id="goal_submit" ng-click="setStatus(user)">Set My Stats</button>
+             </form>
+             
+            </div>
+        </div>
+    </div>          
+    </div>
+    
+        
+ </ion-view>
