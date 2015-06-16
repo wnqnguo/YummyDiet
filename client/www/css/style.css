@@ -576,6 +576,7 @@ input{
     font-size:40px;
     font-family: 'Capriola', cursive;
     margin:10px;
+    text-align:center;
 }
 .signupForm h4{
     position:relative;
@@ -585,7 +586,7 @@ input{
     font-size:20px;
     font-family: 'Capriola', cursive;
     margin:10px;
-
+    text-align:center;
 }
 /*gender view*/
 #male{
