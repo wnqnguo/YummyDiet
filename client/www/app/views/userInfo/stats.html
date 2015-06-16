@@ -7,18 +7,8 @@
             they merely determine where you start</h4>
             
         <div id="input_layer">
-            <!-- <form novalidate class="simple-form">
-                Name: <input type="text" ng-model="user.name" />
-                E-mail: <input type="email" ng-model="user.email" />
-                Gender: <input type="radio" ng-model="user.gender" value="male" />male
-                <input type="radio" ng-model="user.gender" value="female" />female<br />
-                <input type="button" ng-click="reset()" value="Reset" />
-                <input type="submit" ng-click="update(user)" value="Save" />
-            </form>
-           
-            <pre>master = {{master | json}}</pre> -->
                 <div class='status_input'>
-                 <form novalidate class="simple-form">
+                <form novalidate class="simple-form">
                 Current Weight:  <input id ="curr_weight" type="numbers" "style=width:100px" ng-model = "user.curr_weight" />lbs<br />
                 Height: <input id="ft" type="numbers" ng-model = "user.height_ft" />ft
                         <input id="inches" type="numbers" ng-model = "user.height_inch" />inches<br />
@@ -28,7 +18,7 @@
                 
             
                  <button class="button button-stable button-block" id="status_submit" ng-click="setGoalWeight(user)">Set My Goal</br>Weight</button>
-             </form>
+                </form>
              
             </div>
         </div>

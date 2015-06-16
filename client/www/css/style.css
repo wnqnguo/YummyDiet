@@ -5,8 +5,6 @@
     background-image:url("img/home2.jpg");
     /*background-size:380px 700px;*/
     background-size: 119%;
-   
-   
 }
 #home, #signup, #email{
     position:relative;
@@ -123,7 +121,6 @@
 }
 .goal_input input{
     border:none;
-    color:white;
     font-family:'Capriola', cursive;
     font-weight:bold;
 }
@@ -348,6 +345,25 @@ input#birthday{
     top:80px;
     font-size:30px; 
 }
+.weight_activity h3{
+    position:relative;
+    left:0px;
+    top:30px;
+    color: white;
+    font-size:40px;
+    font-family: 'Capriola', cursive;
+    margin:10px;
+}
+.weight_activity h4{
+    position:relative;
+    left:10px;
+    top:20px;
+    color: white;
+    font-size:20px;
+    font-family: 'Capriola', cursive;
+    margin:10px;
+
+}
 input{
     border:none;
 }
@@ -386,6 +402,11 @@ input{
     padding:5px;
     font-size:20px;
 }
+#set_calorie{
+    position:relative;
+    top:50px;
+    width:250px;
+}
 .Budget #title{
     position:relative;
     top:40px;
@@ -412,18 +433,43 @@ input{
     background-color:transparent;
 }
 #last_submit{
+  
     position:relative;
-    background-color:white;
-    top:165px;
-    left:80px;
+    top:240px;
+    text-align:center;
+    background-color:transparent;
+    border-style: dotted;
+    left:20px;
     width: 230px;
-    height:230px;
     border-radius: 50%;
-    border:none;
-    font-size: 40px;
-    font-family: 'Gloria Hallelujah', cursive;
+    height:230px;
+    font-size:25px;
+    color:black;
+    background-color:white;
+
 }
 /***********Signup*************/
+#username{
+    position:relative;
+    top:-25px;
+    left:100px;
+    font-family:'Capriola', cursive;
+    
+}
+#email{
+    position:relative;
+    top:-25px;
+    left:100px;
+    font-family:'Capriola', cursive;
+
+}
+#password{
+    position:relative;
+    top:-25px;
+    left:100px;
+    font-family:'Capriola', cursive;
+
+}
 .signupForm #title{
     position:relative;
     top:-20px;
@@ -473,6 +519,25 @@ input{
     font-size: 40px;
     font-family: 'Gloria Hallelujah', cursive;
     color:white;
+}
+.signupForm h3{
+    position:relative;
+    left:0px;
+    top:30px;
+    color: white;
+    font-size:40px;
+    font-family: 'Capriola', cursive;
+    margin:10px;
+}
+.signupForm h4{
+    position:relative;
+    left:10px;
+    top:20px;
+    color: white;
+    font-size:20px;
+    font-family: 'Capriola', cursive;
+    margin:10px;
+
 }
 /*gender view*/
 #male{
@@ -550,6 +615,31 @@ input{
 
 }
 /*summury*/
+#signup_submit{
+    position:relative;
+    top:140px;
+    left:40px;
+    text-align:center;
+    color:black;
+    background-color:white;
+    border-style: dashed;
+}
+.signupForm{
+    background-image: url("img/signup.jpg");
+}
+#signup_submit{
+    position:relative;
+    top:160px;
+    text-align:center;
+    border-style: dotted;
+    left:70px;
+    width: 230px;
+    border-radius: 50%;
+    height:230px;
+    font-size:25px;
+    color:black;
+    background-color:white;
+}
 #calories {
     position: relative;
     top:10px;
@@ -591,8 +681,10 @@ input{
     border:0px;
 }
 .cal{
-    text-align:right
+    text-align:right;
+     width:130px;
 }
+
 #breakfast_button{
     width:100px;
     font-size:10px;
@@ -630,13 +722,50 @@ input{
 }
 #breakfast_button{
     position:relative;
-    top:-45px;
+    top:-55px;
     font-size:20px;
     width:inherit;
     background-color:transparent;
     color:white;
     border-style:none;
     margin-left:30px;
+    margin-bottom:-30px;
+    font-weight:bold;
+}
+#lunch_button{
+    position:relative;
+    top:-55px;
+    font-size:20px;
+    width:inherit;
+    background-color:transparent;
+    color:white;
+    border-style:none;
+    margin-left:30px;
+    margin-bottom:-30px;
+    font-weight:bold;s
+}
+#dinner_button{
+    position:relative;
+    top:-55px;
+    font-size:20px;
+    width:inherit;
+    background-color:transparent;
+    color:white;
+    border-style:none;
+    margin-left:30px;
+    margin-bottom:-30px;
+    font-weight:bold;s
+}
+#snack_button{
+    position:relative;
+    top:-55px;
+    font-size:20px;
+    width:inherit;
+    background-color:transparent;
+    color:white;
+    border-style:none;
+    margin-left:30px;
+    margin-bottom:-20px;
     font-weight:bold;s
 }
 #weight{

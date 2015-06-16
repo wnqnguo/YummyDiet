@@ -8,7 +8,7 @@
         console.log('this is the user',appFactory.user);
         $scope.idealWeight = appFactory.user.idealWeight;
         // $scope.idealWeight = 110;
-           $scope.setCalorieBudget = function(goal_weight){
+           $scope.setCalorieBudget = function(user){
             //Harris-Benedict Equation
             'use strict';
             var height = (parseInt(appFactory.user.height_ft)*5+parseInt(appFactory.user.height_inch))*2.54;
@@ -20,7 +20,7 @@
                 appFactory.user.recommanded_cal = ( 66.5 + 13.8 *weight + 5 *height - 6.8 *age )*1.2;
              }
              console.log(appFactory.user.recommanded_cal);
-             appFactory.user.goal_weight = goal_weight;
+             appFactory.user.goal_Weight = user.goalWeight;
              $location.path('/CalorieBudget');
         };
     

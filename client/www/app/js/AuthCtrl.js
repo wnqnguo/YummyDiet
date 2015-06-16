@@ -1,30 +1,87 @@
 (function(){
     'use strict';
      angular.module('myApp.AuthCtrl',[])
-     .controller('AuthCtrl',['$scope','$http','$location','appFactory',AuthCtrl]);
+     .controller('AuthCtrl',['$scope','$timeout','$http','$location','appFactory',AuthCtrl]);
 
 
-    function AuthCtrl($scope,$http,$location,appFactory){
+    function AuthCtrl($scope,$timeout,$http,$location,appFactory){
+        console.log('this is the user now',appFactory.user);
+        $scope.breakfastCal = appFactory.user.breakfast.cal;
+        $scope.lunchCal = appFactory.user.lunch.cal;
+        $scope.dinnerCal = appFactory.user.dinner.cal;
+        $scope.snackCal = appFactory.user.snack.cal;
+        $scope.currWeight = appFactory.user.curr_Weight;
+        $scope.goalWeight = appFactory.user.goal_Weight;
+        $scope.remainingCal = appFactory.user.daily_Cal - appFactory.user.consumed_Cal;
+        $scope.consumedCal =appFactory.user.consumed_Cal;
+        //set calories to 0 initially
+        $scope.breakfastCal = 0;
+        $scope.lunchCal = 0;
+        $scope.dinnerCal = 0;
+        $scope.snackCal = 0;
+
         $scope.$on('$stateChangeSuccess', function () {
+            appFactory.user.breakfast.set = false;
+            appFactory.user.lunch.set = false;
+            appFactory.user.dinner.set = false;
+            appFactory.user.snack.set = false;
+            $scope.breakfastCal = appFactory.user.breakfast.cal;
+            $scope.lunchCal = appFactory.user.lunch.cal;
+            $scope.dinnerCal = appFactory.user.dinner.cal;
+            $scope.snackCal = appFactory.user.snack.cal;
             console.log('dfjkhsfjkdfskfhkj');
-            $scope.breakfastCal =  appFactory.meals.cal;
+           
         });
+           $scope.data = { 'Calorie' : '0' };
+    
+    var timeoutId = null;
+    
+    $scope.$watch('lunchCal', function() {
+        
+        
+        console.log('Has changed');
+        
+        if(timeoutId !== null) {
+            console.log('Ignoring this movement');
+            return;
+        }
+        
+        console.log('Not going to ignore this one');
+        timeoutId = $timeout( function() {
+            
+            console.log('It changed recently!');
+            
+            $timeout.cancel(timeoutId);
+            timeoutId = null;
+            
+            // Now load data from server 
+        }, 1000); 
+        
+        
+    });
+         // console.log("let's check what user current weight is", appFactory.user);
+        // console.log("let's check what user breakfast is", appFactory.user.breakfast);
+       
+
+
+
+
         console.log('*********************************************');
         $scope.test ='hiiiiii';
         $scope.obj ={cal: 0};
 
-        // $scope.obj.cal=  appFactory.meals.cal;
-        console.log('calorie',$scope.breakfastCal);
-        $scope.currentWeight = appFactory.user.curr_weight;
-        console.log('inside AuthCtrl',appFactory.obj.breakfastCal );
-        $scope.recommended_cal = appFactory.user.recommanded_cal;
-        // $scope.breakfastCal =  appFactory.meals.cal;
-        console.log('inside AuthCtrl', appFactory.meals.breakfast.cal);
-        //$scope.breakfastCal =  200;
         
-        $scope.signup = function(){
-            appFactory.user = {};
-            console.log('called singup');
+        $scope.currentWeight = appFactory.user.curr_Weight;
+      
+        $scope.recommended_cal = appFactory.user.recommanded_cal;
+       
+    
+        
+        $scope.signup = function(user){
+
+           appFactory.user.daily_Cal = user.cal;
+            console.log('this is the daily cal',user.cal);
+            console.log('this is the user',appFactory.user);
             $location.path('/signupForm');
          };
          // redirect to the page for email or facebook login
@@ -45,7 +102,11 @@
         console.log('!jimmyyyyy is amainzgggg');
         $scope.breakfastCal =  appFactory.meals.cal;
     }
-     $scope.postUserInfo=function(){
+     $scope.postUserInfo=function(user){
+        appFactory.user.password = user.password;
+        appFactory.user.email = user.email;
+        appFactory.user.username = user.username;
+        console.log('this is the user after signup', appFactory.user);
         $location.path('/profile');
         console.log('called singup');
         // appFactory.user.email = email ;
@@ -85,19 +146,35 @@
             $location.path('/home');
         });
     };   
-    $scope.searchBreakfast = function(){
-    console.log('called breakfast()');
+    $scope.searchMeal = function(index){
+        
+        switch(index){
+            case 0:
+                appFactory.user.breakfast.set = true;
+                break;
+            case 1:
+                appFactory.user.breakfast.set = true;
+                break;
+            case 2:
+                appFactory.user.breakfast.set = true;
+                break;
+            case 3:
+                appFactory.user.breakfast.set = true;
+                break;
+            
+
+
+
+        }
+        console.log('is breakfast true??',index);
+        console.log('called breakfast()');
     $location.path('/breakfast');
     };
-
-    // $scope.food = appFactory.meals.breakfast;
-    // console.log('hiiiii',appFactory.meals.breakfast.ndbno);
-    // console.log('nutrition info',appFactory.meals.breakfast.nutrients);
-    // $scope.name = appFactory.meals.breakfast.name;
-    // $scope.nutrients = appFactory.meals.breakfast.nutrients;
-    // $scope.serving_size = appFactory.meals.breakfast.measure;
-    // appFactory.meals.cal = $scope.nutrients[3].value; 
-    // console.log('cal value',$scope.nutrients[3].value);
+        $scope.setCalorieBudget = function (user){
+            appFactory.user.goal_weight = user.goalWeight;
+            console.log('this is the user after setting goalWeight',appFactory.user);
+            $location.path('/signupForm');
+        }
 
      
    }; 

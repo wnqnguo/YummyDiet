@@ -1,28 +1,29 @@
 
 
-<ion-view title="localAuth" ng-controller="AuthCtrl" class="signupForm">
+<ion-view title="localAuth" ng-controller="AuthCtrl" class="signupForm">s
+        <div id = "stats_layer">
+        <div id = "berry_layer">
+        <h3>Sign Up</h3>
+        <h4>You are one step away from starting a new journey</h4>
+            
+        <div id="input_layer">
+        <div class='_input'>
+                 <form novalidate class="simple-form">
+                  username: <input id ="username" type="text" "style=width:100px" ng-model = "user.username" />
+                  email: <input id="email" type="text" ng-model = "user.email" />
+                  password: <input id="password" type="text" ng-model = "user.password"/>
+                  </form>
 
-        <p id='title'>Sign Up</p>
-        <p id='quote'> You are one step away from starting a new journey</p>
-        <div>
-          <label class="item item-input">
-            <span class="input-label" >username</span>
-            <input type="text" ng-model='email'>
-          </label>
-           <label class="item item-input">
-            <span class="input-label" >email</span>
-            <input type="text" ng-model='email'>
-          </label>
-          <label class="item item-input">
-            <span class="input-label" >password</span>
-            <input type="text" ng-model='email'>
-          </label>
-          <label class="item item-input">
-            <span class="input-label" >verify password</span>
-            <input type="text" ng-model='email'>
-          </label>
-          <button id="register"class="button button-block button-stable" ng-click='postUserInfo()'>Register</button>
         </div>
+        </div>
+         <button class="button button-stable button-block" id="signup_submit" ng-click="postUserInfo(user)">Signup</button>
+
+
+         </div>
+      
+
+              
+</div>        
 
  
 </ion-view>

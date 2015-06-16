@@ -12,15 +12,13 @@
 	        <h4> This is your recommended calorie budget is {{recommended_cal}} cal</h4>
 	            
 	        <div id="calorie1_layer">
-	            
+	            <div id ="cal_adjust">
+	             	<input type="range" min="0" max="4000"name="volume" ng-model="user.cal" id="set_calorie">
+	             </div>
 	      
-	              
-	                 
-	                
-	                <input type="range" name="volume" ng-model="data.volume">
-	            	<p>Volume : {{data.volume}}</p>
-	            	
-	                 <button class="button button-stable button-block" id="goalweight_submit" ng-click="setCalorieBudget(user)">Calorie Budget</button>
+	              <p>Cal : {{user.cal}}</p>
+
+	                 <button class="button button-stable button-block" id="last_submit" ng-click="signup(user)">Calorie Budget</button>
 	             	
 	             
 	            	

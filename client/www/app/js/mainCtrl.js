@@ -6,7 +6,6 @@
 
     function mainCtrl($scope,$http,$location,appFactory){
         console.log('inside mainCtrl');
-         //$location.path('/goal')
         var user={};
         $scope.signupEmail = function(){
             console.log('signing up with email');
@@ -16,27 +15,12 @@
              appFactory.user.goal = item;
              $location.path('/genderandAge');
          };
-        // $scope.setName=function(item){
-        //     appFactory.user.username=item;
-        //     var user = appFactory.user;
-        //     $http.post('/name',user)
-        //         .success(function(data,status,header,config){
-        //             console.log('sent name to server');
-        //         })
-        //         .error(function(data,status,header,config){
-        //             console.log('failed');
-        //         });
-        //         $location.path('/gender');
-                
-        //  };
-   
-    
         $scope.setGoalWeight = function(user){
             //$scope.user = {};
             console.log('inside of setGoalHeight');
            
             appFactory.user.birthday = user.birthday;
-            appFactory.user.curr_weight = user.curr_weight;
+            appFactory.user.curr_Weight = user.curr_weight;
             appFactory.user.height_ft = user.height_ft;
             appFactory.user.height_inch = user.height_inch;
             appFactory.user.gender = user.gender;
@@ -67,13 +51,7 @@
             console.log('weight is',weight);
             appFactory.user.idealWeight = Math.floor(weight*2.20462);
             console.log('calculated weight', appFactory.user.idealWeight);
-            //$rootScope.idealWeight = appFactory.user.weight;
-           
-           
-
-            //appFactory.user.height_ft = height_ft;
-           // appFactory.user.curr_weight = weight;
-           $location.path('/activity');
+            $location.path('/activity');
         };
         $scope.setAge = function(item){
             appFactory.user.age = item;
@@ -83,6 +61,7 @@
             //console.log('inside setStatus', goal,date);
             appFactory.user.goal = user.goal;
             appFactory.user.goalDate = user.goal_date; 
+            console.log(appFactory.user);
             $location.path('/stats');
         };
 

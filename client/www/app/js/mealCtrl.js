@@ -8,10 +8,9 @@
 
         //set 
         // appFactory.meals.breakfast.name = "";
-         appFactory.meals.breakfast.calorie= 0;
+         $scope.food={};
          console.log('in side of mealCtrl');
         
-        $scope.food = {};
         $scope.selectMeal=function(item){
 
             console.log(item);
@@ -28,7 +27,7 @@
             $scope.items=[];
             $scope.food.name = item;
             $scope.names = [];
-            appFactory.meals.breakfast.type=item;
+            //appFactory.user.breakfast.type=item;
            // console.log(item);
             return $http({
               method: 'GET',
@@ -60,11 +59,12 @@
         $scope.obj={};
         $scope.obj.food="";
         $scope.getNutrition = function(item){
-            appFactory.meals.breakfast.name=item;
+
+            appFactory.user.breakfast.name=item;
             var index = $scope.names.indexOf(item);
             console.log('called get nutrition');
            
-            appFactory.meals.breakfast.ndbno=$scope.ndbnos[index];
+            appFactory.user.breakfast.ndbno=$scope.ndbnos[index];
             console.log('the number is ',$scope.ndbnos[index]);
             console.log('inside of getNutrition');
             console.log('hiiiii',appFactory.meals);
@@ -81,26 +81,21 @@
                 var obj = JSON.parse(resp.data);
                 console.log(typeof resp.data);
                 console.dir(obj);
-                appFactory.meals.breakfast.nutrients = obj.report.foods[0].nutrients;
-                var nutrients = appFactory.meals.breakfast.nutrients;
+                appFactory.user.breakfast.nutrients = obj.report.foods[0].nutrients;
+                var nutrients =  appFactory.user.breakfast.nutrients;
                 // window.locationStorage['nutrients'] = appFactory.meals.breakfast.nutrients;
                 //$window.localStorage['name']='Max';
                 console.log($window.localStorage['name']);
                 console.log('stwtiching to nutrition');
-                 $location.path('/nutrition');
                 console.log('nutrition information',obj.report.foods[0]);
+                 $location.path('/nutrition');
+                
 
             });
             
             
         }
-       $scope.setBreakfast = function(){
-          $scope.breakfastCal = 600;
-          $location.path('/breakfast');
-         
 
-
-       }
 
 
     };

@@ -10,8 +10,8 @@
             <td>Cal Consumed:</td>
         </tr>
         <tr>
-            <td>400 cal</td>
-            <td>500 cal</td>
+            <td>{{remainingCal}} cal</td>
+            <td>{{consumedCal}} cal</td>
         </tr>
         </table>
     </div>
@@ -20,43 +20,28 @@
             <table id='meals'>
         <tr>
             <td style="color:white"><i class="icon ion-coffee" ></i>
-                <button class="button button-stable button-block" id ="breakfast_button"ng-click="searchBreakfast()">Breakfast</button>
+                <button class="button button-stable button-block" id ="breakfast_button"  ng-click="searchMeal(0)">Breakfast</button></td>
                 
-            <td class="cal" style="color:#baffc9">{{breakfastCal}}cals</td>
+            <td class="cal" style="color:#baffc9">{{breakfastCal}} cals</td>
         </tr>
         <tr>
-            <td style="color:white"><i class="icon ion-pizza"></i>Lunch:</td>
-            <td class="cal" style="color:#baffc9">0 cals</td>
+             <td style="color:white"><i class="icon ion-pizza" ></i>
+                <button class="button button-stable button-block" id ="lunch_button"ng-click="searchMeal(1)">Lunch</button></td>
+
+            <td class="cal" style="color:#baffc9">{{lunchCal}} cals</td>
         </tr>
         <tr>
-            <td style="color:white"><i class="ion-beer"></i>Dinner:</td>
-            <td class="cal" style="color:#baffc9">0 cals</td>
+             <td style="color:white"><i class="icon ion-beer" ></i>
+                <button class="button button-stable button-block" id ="dinner_button"ng-click="searchMeal(2)">Dinner</button></td>
+            <td class="cal" style="color:#baffc9">{{dinnerCal}} cals</td>
         </tr>
         <tr>
-            <td style="color:white"><i class="icon ion-icecream">Snack:</td>
-            <td class="cal" style="color:#baffc9">0 cals</td>
+             <td style="color:white"><i class="icon ion-icecream" ></i>
+                <button class="button button-stable button-block" id ="snack_button"ng-click="searchMeal(3)">Snack</button></td>
+            <td class="cal" style="color:#baffc9">{{snackCal}} cals</td>
         </tr>
         </table>
-            <!-- <a class="item item-icon" style="color:#baffc9" >
-                <i class="icon ion-coffee" ></i>
-                Breakfast :   400 cals
-                
-            </a>
-             <a class="item item-icon" style="color:#ffffba">
-                <i class="icon ion-pizza"></i>
-                Lunch : 500 cals
-                
-               
-            </a>
-            <a class="item item-icon" style="color:#bae1ff">
-                <i class="ion-beer"></i>
-                Dinner : 500 cals
-            </a>
-            <a class="item item-icon" style="color:#ffb3ba">
-                <i class="icon ion-icecream"></i>
-                Snack : 0 cals
-                <i class></i>
-            </a> -->
+
         </div>
     </div>
     <div id="weight_layer"> 
@@ -66,8 +51,8 @@
                 <td>goal weight:</td>
             </tr>
             <tr>
-                <td>135 lbs</td>
-                <td>120 lbs</td>
+                <td>{{currWeight}} lbs</td>
+                <td>{{goalWeight}} lbs</td>
             </tr>
         </table>
     </div>
