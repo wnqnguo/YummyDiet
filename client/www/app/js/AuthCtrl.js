@@ -12,8 +12,8 @@
         $scope.snackCal = appFactory.user.snack.cal;
         $scope.currWeight = appFactory.user.curr_Weight;
         $scope.goalWeight = appFactory.user.goal_Weight;
-        $scope.remainingCal = appFactory.user.daily_Cal - appFactory.user.consumed_Cal;
-        $scope.consumedCal =appFactory.user.consumed_Cal;
+        
+        
         //set calories to 0 initially
         $scope.breakfastCal = 0;
         $scope.lunchCal = 0;
@@ -25,6 +25,8 @@
             appFactory.user.lunch.set = false;
             appFactory.user.dinner.set = false;
             appFactory.user.snack.set = false;
+            $scope.remainingCal = appFactory.user.daily_Cal - appFactory.user.consumed_Cal;
+            $scope.consumedCal = appFactory.user.breakfast.cal;
             $scope.breakfastCal = appFactory.user.breakfast.cal;
             $scope.lunchCal = appFactory.user.lunch.cal;
             $scope.dinnerCal = appFactory.user.dinner.cal;

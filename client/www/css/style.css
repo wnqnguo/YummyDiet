@@ -66,6 +66,11 @@
     font-family: 'Gloria Hallelujah', cursive;
 }
 
+#setGoal:active{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
 /*goal view*/
 #orange_layer{
     background-color: rgba(0, 0, 0, 0.5);
@@ -78,8 +83,7 @@
 #goal_layer{
     
     height:100%;
-    width:100%;
-    
+    width:100%;    
 }
 .goal h3{
   position:relative;
@@ -109,6 +113,7 @@
     font-size:20px;
     font-family: 'Capriola', cursive;
     margin:10px;
+    text-align: center;
 
 }
 .goal_input{
@@ -123,6 +128,16 @@
     border:none;
     font-family:'Capriola', cursive;
     font-weight:bold;
+}
+
+#goal_string {
+    margin-bottom: 17px;
+    width: 200px;
+    padding-left: 10px; 
+}
+
+#goal_date {
+    width: 200px;
 }
 input#goal_input{
     position:relative;
@@ -152,30 +167,60 @@ input#birthday{
     background-color:rgba(248, 247, 216, 0.3);
     height:200px;
     width:300px;
-    left:40px;
+    left:30px;
+    text-align:center;
+   
     border-radius:30px;
     box-shadow: 0px 0px 15px #888;
     background-color: rgba(0, 0, 0, 0.5);
     padding:5px;
+    padding-left: 50px;
     font-size:20px;
 }
-.goal_input, .simple-form{
+
+.goal_input{
     position: relative;
-    top: 20px;
+    top:0px;
+    width: 200px;
+
 }
 .goal_input #goal_submit{
     position:relative;
-    top:140px;
+    top:180px;
     text-align:center;
     background-color:transparent;
     border-style: dotted;
-    left:20px;
+    left:0px;
     width: 230px;
     border-radius: 50%;
     height:230px;
     font-size:25px;
     color:black;
     background-color:white;
+}
+#goal_weight{
+  background-color:rgba(248, 247, 216, 0.3);
+   color:white;
+   position:relative;
+   top:-3px;
+   left:10px;
+   margin-top: 50px;
+
+}
+#goalweight_submit{
+    position:relative;
+    top:220px;
+    text-align:center;
+    background-color:transparent;
+    border-style: dotted;
+    left:-10px;
+    width: 230px;
+    border-radius: 50%;
+    height:230px;
+    font-size:25px;
+    color:black;
+    background-color:white;
+    
 }
 /*goal view*/
 
@@ -199,21 +244,25 @@ input#birthday{
    
 }
 #berry_layer{
-    background-color: rgba(0, 0, 0, 0.5);
+     background-color: rgba(0, 0, 0, 0.5);
      box-shadow: 0px 0px 15px #999;
      height:600px;
      width:350px;
      margin:15px;
      border-radius:10px;
+
 }
 .stats h3{
     position:relative;
-    left:100px;
+   
     top:30px;
     color: white;
     font-size:40px;
     font-family: 'Capriola', cursive;
     margin:10px;
+    text-align: center;
+
+
 
 }
 .stats h4{
@@ -224,6 +273,8 @@ input#birthday{
     font-size:20px;
     font-family: 'Capriola', cursive;
     margin:10px;
+    text-align: center;
+    
 
 }
 .status_input{
@@ -243,15 +294,22 @@ input#birthday{
 input#curr_weight{
     position:relative;
     width:50px;
+    top:-3px;
     margin-left:20px;
-    background-color:transparent;
+    background-color:rgba(248, 247, 216, 0.3);
     margin-bottom:10px;
+    margin-left: 0px;
+    margin-right: 7px;
 }
 input#ft,#inches{
+    position:relative;
     width:50px;
     margin-left:10px;
-    background-color:transparent;
+    top:-3px;
+    background-color:rgba(248, 247, 216, 0.3);
     margin-bottom:10px;
+    margin-left: 0px;
+    margin-right: 7px;
 }
 #male_button{
     margin-left:5px;
@@ -263,13 +321,14 @@ input#ft,#inches{
 }
 input#birthday{
     position:relative;
-    top: -0px;
+    top: -px;
+    background-color:rgba(248, 247, 216, 0.3);
     left:-120px;
     float:right;
     width:160px;
-    background-color:white;
-    color:black;
+    
 }
+
 #input_layer{
 
     position:relative;
@@ -304,25 +363,7 @@ input#birthday{
     font-size:25px;
     font-family: 'Capriola', cursive;
 }
-.Budget h3{
-    position:relative;
-    left:0px;
-    top:30px;
-    color: white;
-    font-size:40px;
-    font-family: 'Capriola', cursive;
-    margin:10px;
-}
-.Budget h4{
-    position:relative;
-    left:10px;
-    top:20px;
-    color: white;
-    font-size:20px;
-    font-family: 'Capriola', cursive;
-    margin:10px;
 
-}
 
 .weight_activity{
    background-image: url("img/activity.jpg");
@@ -367,25 +408,32 @@ input#birthday{
 input{
     border:none;
 }
-#goalweight_submit{
-    position:relative;
-    top:240px;
-    text-align:center;
-    background-color:transparent;
-    border-style: dotted;
-    left:20px;
-    width: 230px;
-    border-radius: 50%;
-    height:230px;
-    font-size:25px;
-    color:black;
-    background-color:white;
-    
-}
+
 /******Calorie Budget**********/
 .Budget{
   background-image: url("img/summary.jpg");
 
+
+}
+.Budget h3{
+    position:relative;
+    left:0px;
+    top:30px;
+    color: white;
+    font-size:40px;
+    font-family: 'Capriola', cursive;
+    margin:10px;
+    text-align:center;
+}
+.Budget h4{
+    position:relative;
+    left:10px;
+    top:20px;
+    color: white;
+    font-size:20px;
+    font-family: 'Capriola', cursive;
+    margin:10px;
+    text-align:center;
 
 }
 #calorie1_layer{
@@ -810,12 +858,20 @@ input{
     position:relative;
     background-color: rgba(0, 0, 0, 0.5);
     box-shadow: 0px 0px 15px #999;
+
  
     top:60px;
     left:10px;
     width:340px;
     border-radius:20px;
     height:80px;
+    padding: 0 25px;
+    text-align: center;
+    line-height: 30px;
+
+}
+#title_layer p {
+    font-size: 25px;
 }
 
 #layer{

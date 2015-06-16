@@ -13,6 +13,8 @@
         $scope.serving_size = appFactory.user.breakfast.measure;
        
         appFactory.user.breakfast.cal = $scope.nutrients[3].value; 
+        appFactory.user.consumed_Cal = appFactory.user.breakfast.cal;
+        console.log("let's check which meal the user is setting", appFactory.user);
         console.log('cal value',$scope.nutrients[3].value);
         if(appFactory.user.breakfast.set === true){
             console.log('setting breakfast');
@@ -31,7 +33,7 @@
         appFactory.user.lunch.set = false;
         appFactory.user.dinner.set = false;
         appFactory.user.snack.set = false;
-        
+
          $scope.SetCalorie = function(){
             console.log('called set calorie');
         $location.path('/profile');

@@ -6,8 +6,8 @@
             
         <div id="square_layer">
             <div class='goal_input'>
-                <form novalidate class="simple-form">
-                I will:  <input id ="goal_string" type="text" "style=width:100px" ng-model = "user.goal" />
+                <form novalidate class="simple-form" id =" goal_form" >
+                I will:  <input placeholder="Set your goal" id ="goal_string" type="text" "style=width:100px" ng-model = "user.goal" />
                 by: <input id = "goal_date" type = "date" ng-model = "user.goal_date" />
                 <button class="button button-stable button-block" id="goal_submit" ng-click="setStatus(user)">Set My Stats</button>
                 </form>
